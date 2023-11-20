@@ -1,11 +1,20 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.page {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
 }
 
 .navbar{
@@ -14,11 +23,13 @@ body {
     font-size: 20px;
     font-weight: bold;
     padding: 10px;
-    height: 70px;
     width: 100%;
     text-decoration: none;
     text-transform: uppercase;
-    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .navbar a{
@@ -33,29 +44,27 @@ body {
     font-weight: bold;
 }
 
-.navbar-links{
-    float:right;
-    height: inherit;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.header {
+    height: 100%;
+}
+
+.header-content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
 }
 
 .header-photo{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+    grid-area: 1 / 1 / 13 / 13;
+    height: 100%;
     width: 100%;
 }
 
 
 .header-text{
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -25%);
+    grid-area: 2 / 4 / 4 / 10;
+    width: fit-content;
+    margin: auto;
 }
 
 .header-text h1{
@@ -77,16 +86,15 @@ body {
 }
 
 .header-button{
+    grid-area: 4 / 6 / span 1 / span 2;
+    margin: auto;
     background-color: #164A4A;
     padding: 10px 20px;
     color: white;
     text-decoration: none;
     font-size: 25px;
     font-weight: bold;
-    position: relative;
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
+    width: fit-content;
     transition: all .3s;
 }
 
@@ -279,18 +287,16 @@ body {
 
 
 
-.footer{
+.footer {
     background-color: #164A4A;
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
     padding: 50px 0 10px 0;
-    margin-top: auto;
-    height: auto;
+    /* margin-top: auto; */
+    align-self: flex-end;
     text-decoration: none;
     text-transform: uppercase;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -321,7 +327,6 @@ body {
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    margin: 0;
     font-size: 18px;
 }
 
@@ -348,7 +353,6 @@ body {
 
 .footer-underline{
     width: 35%;
-    margin: 0;
 }
 
 .lower-footer{
