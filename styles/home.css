@@ -192,10 +192,149 @@ body {
     transform: scale(1.06);
 }
 
+.Platinum{
+    background-image: url(../assets/Platinum.jpg);
+}
+.Gold{
+    background-image: url(../assets/Gold.jpg);
+}
+.Silver{
+    background-image: url(../assets/Silver.jpg);
+}
+.Bronze{
+    background-image: url(../assets/Bronze.jpg);
+}
+
+
+.Package{
+    display:fixed;
+    padding-left: 200px;
+}
+
+.Package div{
+    width: 80%;
+    height : 200px;
+    background-size: 400px 200px;
+    background-repeat: no-repeat; 
+}
 
 
 
+.Package h1{
+    padding-left: 360px;
+    color : rgba(2, 67, 207, 0.767)
+}
+.Package h2{
+    padding-left: 480px;
+    color :rgba(2, 67, 207, 0.767);
+}
 
+
+.Package ul{
+    list-style-position: inside;
+    padding-left: 480px;
+    color:rgb(243, 35, 156);
+}
+
+
+.Package div:hover {
+    transform:scale(1.008);
+    transition: 0.6s;
+    cursor: pointer;
+  
+}
+
+
+.Package div{
+    border-color: rgba(73, 117, 240, 0.336);
+    border-style:solid;
+    border-radius: 10%/ 90%;
+
+}
+
+
+.learn-more{
+    font-size:20px;
+    border-style:solid;
+    border-radius: 10%/ 90%;
+    border-color: rgba(73, 117, 240, 0.336);
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    color :rgb(243, 35, 156);
+   
+}
+
+.learn-more:hover{
+    transform:scale(1.008);
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+
+#locations h1{
+    text-align: center;
+    color : rgba(2, 67, 207, 0.767);
+}
+
+#type{
+    width: 100px;
+    text-align: center;
+    margin-left: 642px;
+    border: 2px solid rgba(2, 67, 207, 0.767);
+    border-radius: 25px;
+    padding: 1px,1px,1px,1px;
+    color : rgb(243, 35, 156);
+}
+
+#country{
+    color : rgb(243, 35, 156);
+}
+
+#locations {
+    display:fixed;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#global img{
+    flex-direction: row;
+    width: 325px;
+    height: 342px;
+    border-radius: 25px ;
+    padding: 0.6%;
+}
+
+#local img{
+    flex-direction: row;
+    width: 325px;
+    height: 342px;
+    border-radius: 25px ;
+    padding: 0.6%;
+}
+
+#namesglobal{
+    font-size: large;
+    color : rgba(2, 67, 207, 0.767);
+}
+
+#nameslocal{
+    font-size: large;
+    color : rgba(2, 67, 207, 0.767);
+}
+
+#global img:hover {
+    transform:scale(1.06);
+    transition: 0.6s;
+    cursor: pointer;
+    filter: brightness(75%);
+}
+
+#local img:hover {
+    transform:scale(1.06);
+    transition: 0.6s;
+    cursor: pointer;
+    filter: brightness(75%);
+}
 
 
 
