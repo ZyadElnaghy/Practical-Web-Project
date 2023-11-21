@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/home.css">
-    <title>Document</title>
+    <title>Travelago</title>
 </head>
 <body>
     <div class="page">
-
+        <p id="home" ></p>
         <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">Location</a>
-            <a href="#">Packages</a>
-            <a href="#">About Us</a>
+            <a href="#home">Home</a>
+            <a href="#location">Location</a>
+            <a href="#package">Packages</a>
+            <a href="#about">About Us</a>
             <a href="contact_us.html">Contact Us</a>
         </nav>
 
 
-
-
-
-
         <header class="header">
             <div class="header-content">
-                <img src="assets/header-image.png" alt="Error loading GIF" class="header-photo">
-                <div class="header-text">
+                <!-- <img src="assets/header-image.png" alt="Error loading GIF" class="header-photo"> -->
+                <video autoplay loop muted  class="header-photo" >
+                    <source src="assets/Firstflight Travels.mp4" type="video/mp4">
+                </video>
+                <div class="header-text">   
                     <h1>Enjoy Your Vacation</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
                 </div>
@@ -44,7 +43,7 @@
                 </div>
                 <a href="#" class="service-button">Explore !</a>
             </div>
-    
+            
             <div class="hotel-services">
                 <div class="service-card-text">
                     <h1 class="hotel-services-title">Hotel Services <ion-icon name="bed-outline" class="icon"></ion-icon></h1>
@@ -54,17 +53,18 @@
             </div>
         </div>
     </section>
-
-        <div id="locations">
-            <h1>Locations</h1>
-            <div>
+    <!-- when i click location come here  -->
+    <p id="location" ></p> 
+    <div id="locations">
+        <h1>Locations</h1>
+        <div>
                 <h2 id="type">Global</h2>
                 <div>
                     <p id="global">
-                        <a href="Location.html#ttdubai" target="_blank"><img src="https://github.com/OmarAlaraby/Practical-Web-Project/blob/main/assets/Dubai.jpg" alt="Dubai"></a>
-                        <a href="Location.html#ttparis" target="_blank"><img src="https://github.com/OmarAlaraby/Practical-Web-Project/blob/main/assets/Paris.jpg" alt="Paris"></a>
-                        <a href="Location.html#ttturkey" target="_blank"><img src="https://github.com/OmarAlaraby/Practical-Web-Project/blob/main/assets/Turkey.jpg" alt="Turkey"></a>
-                        <a href="Location.html#ttindia" target="_blank"><img src="https://github.com/OmarAlaraby/Practical-Web-Project/blob/main/assets/India.jpg" alt="India"></a>
+                        <a href="E:\FCI\Practical Web projrct\Location.html#ttdubai" target="_blank"><img src="assets\Dubai.jpg" alt="Dubai"></a>
+                        <a href="E:\FCI\Practical Web projrct\Location.html#ttparis" target="_blank"><img src="assets\Paris.jpg" alt="Paris"></a>
+                        <a href="E:\FCI\Practical Web projrct\Location.html#ttturkey" target="_blank"><img src="assets\Turkey.jpg" alt="Turkey"></a>
+                        <a href="E:\FCI\Practical Web projrct\Location.html#ttindia" target="_blank"><img src="assets\India.jpg" alt="India"></a>
                     </p>
                     <P id="namesglobal">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
                         &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<b>Dubai</b> &nbsp &nbsp &nbsp &nbsp &nbsp
@@ -76,14 +76,15 @@
                         &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
                         &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
                         &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<b>India</b> </P>
-                </div>
+                        
+                    </div>
                 <h2 id="type">Local</h2>
                 <div>
                     <p id="local">
-                        <a href="Location.html#ttluxor" target="_blank"><img src="https://github.com/OmarAlaraby/Practical-Web-Project/blob/main/assets/Luxor.jpeg" alt="Luxor"></a>
-                        <a href="Location.html#ttalex" target="_blank"><img src="https://github.com/OmarAlaraby/Practical-Web-Project/blob/main/assets/Alex.jpg" alt="Alexandria"></a>                   
-                        <a href="Location.html#ttgiza" target="_blank"><img src="https://github.com/OmarAlaraby/Practical-Web-Project/blob/main/assets/Giza.jpg" alt="Giza"></a>
-                        <a href="Location.html#ttsaintcatherine" target="_blank"><img src="https://github.com/OmarAlaraby/Practical-Web-Project/blob/main/assets/Saint%20Catherine.jpg" alt="Saint Catherine"></a>
+                        <a href="E:\FCI\Practical Web projrct\Location.html#ttluxor" target="_blank"><img src="assets\Luxor.jpeg" alt="Luxor"></a>
+                        <a href="E:\FCI\Practical Web projrct\Location.html#ttalex" target="_blank"><img src="assets\Alex.jpg" alt="Alexandria"></a>                   
+                        <a href="E:\FCI\Practical Web projrct\Location.html#ttgiza" target="_blank"><img src="assets\Giza.jpg" alt="Giza"></a>
+                        <a href="E:\FCI\Practical Web projrct\Location.html#ttsaintcatherine" target="_blank"><img src="assets\Saint Catherine.jpg" alt="Saint Catherine"></a>
                     </p>
                     <P id="nameslocal">&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
                         &nbsp &nbsp &nbsp &nbsp &nbsp<b>Luxor</b> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
@@ -96,9 +97,10 @@
                        &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp<b>Saint Catherine</b> </P>
                 </div>
             </div>
-        </div>
-    
-    <div class = "Package">
+        </div> 
+        
+        <!-- when i click packages come here -->
+        <div class = "Package" id = "package">
         <h1> Packages </h1>
 
 
@@ -119,8 +121,8 @@
 
         
         <br>
-
-
+        
+        
         <div class ="Gold">
             <h2> Gold</h2>
             <p>
@@ -177,6 +179,7 @@
 
 
 
+    <p id="about" ></p>
 
 
     <footer class="footer">
@@ -187,15 +190,14 @@
                 <div class="footer-links-container">
                     <a href="#">Register</a>
                     <a href="#">About Us</a>
-                    <a href="#">Contact Us</a>
                 </div>
             </div>
     
             <div class="footer-contacts">
                 <h2>Contact Us</h2>
                 <hr class="footer-underline">
-                <p>Phone: +20 1068664556</p>
-                <p>Email:</p>
+                <p>Phone: <a href="tel:1234567890">123-456-7890</a>  </p>
+                <p>Email:  <a href="mailto:TeamGamed@gmail.com">TeamGamed@gmail.com</a>  </p>
             </div>
         </div>
         <div class="lower-footer">
