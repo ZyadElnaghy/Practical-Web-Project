@@ -111,8 +111,9 @@
 .navbar li a {
   color: white;
   text-align: center;
-  padding: 50px 16px;
+  padding: 15px 16px;
   text-decoration: none;
+  border-radius: 20px;
 }
 
 .navbar li a:hover {
