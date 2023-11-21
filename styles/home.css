@@ -18,9 +18,12 @@ body , html {
 .page {
     display: flex;
     flex-direction: column;
+    align-items: center;
     /* justify-content: space-between; */
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar{
@@ -123,11 +126,18 @@ body , html {
     transform: scale(1.06);
 }
 
+.home-content{
+    width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .services{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10vh;
     /* justify-content: center;
     height: auto;
     padding: 0 20px; */
@@ -137,7 +147,7 @@ body , html {
     font-size: 45px;
     color: black;
     text-transform: capitalize;
-    /* margin-bottom: 20px; */
+    margin-bottom: 30px;
 }
 
 .services-container{
@@ -163,9 +173,9 @@ body , html {
     background-color: #fff8f8;
     padding: 40px;
     width: 50%;
-    height: 300px;
+    height: auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    margin: 20px 20px;
+    margin: 0 10px;
     border: 1px solid rgb(188, 186, 186);
     transition: all .3s;
 }
@@ -233,10 +243,36 @@ body , html {
     background-image: url(../assets/Bronze.jpg);
 }
 
+.Platinum,
+.Gold,
+.Silver,
+.Bronze{
+    border: .5px;
+    padding: 20px;
+}
+
+.Platinum h2,
+.Gold h2,
+.Silver h2,
+.Bronze h2{
+    padding-left: 480px;
+    margin-bottom: 10px;
+}
+
 
 .Package{
-    padding-left: 200px;
-    padding-top: 100px;
+    margin: 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Package h1{
+    color :var(--titles);
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .Package div{
@@ -245,16 +281,6 @@ body , html {
     background-size: 400px 200px;
     background-repeat: no-repeat; 
     transition: 0.6s;
-}
-
-
-
-.Package h1{
-    padding-left: 360px;
-    color :var(--titles);
-}
-.Package h2{
-    padding-left: 480px;
 }
 
 
@@ -301,6 +327,7 @@ body , html {
     text-align: center;
     color :var(--titles);
     padding-top: 100px ;
+    margin-bottom: 20px;
 }
 
 #type{
