@@ -255,7 +255,7 @@ body , html {
 .Gold h2,
 .Silver h2,
 .Bronze h2{
-    padding-left: 480px;
+    padding-left: 630px;
     margin-bottom: 10px;
 }
 
@@ -277,8 +277,8 @@ body , html {
 
 .Package div{
     width: 80%;
-    height : 200px;
-    background-size: 400px 200px;
+    height : 250px;
+    background-size: 600px 250px;
     background-repeat: no-repeat; 
     transition: 0.6s;
 }
@@ -286,8 +286,10 @@ body , html {
 
 .Package ul{
     list-style-position: inside;
-    padding-left: 480px;
+    padding-left: 630px;
     color:var(--subtitles);
+    line-height : 25px;
+    font-size : 16px;
 }
 
 
@@ -306,14 +308,17 @@ body , html {
 
 
 .learn-more{
+    width: 150px;
+    height : 40px;
     font-size:20px;
     border-style:solid;
-    border-radius: 10%/ 90%;
+    border-radius: 20%/ 90%;
     border-color: var(--titles);
     background-repeat: no-repeat;
     background-color: var(--secondary-color);
     color :var(--subtitles);
     transition: 0.6s;
+    margin-left: 900px;
 
 }
 
