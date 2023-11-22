@@ -169,7 +169,7 @@ body , html {
 .travel-services, .hotel-services{
     display: grid;
     /* grid-template-columns: 500px 150px; */
-    grid-template-rows: 250px 65px;
+    grid-template-rows: 200px 65px;
     background-color: #fff8f8;
     padding: 40px;
     width: 50%;
@@ -464,4 +464,18 @@ body , html {
     width: 100%;
     padding-top: 200px;
     font-size: 14px;
+}
+
+
+
+@media screen and (max-width: 1650px) {
+    .home-content{
+        width: 1400px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .home-content{
+        width: 1200px;
+    }
 }
