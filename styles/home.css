@@ -255,7 +255,7 @@ body , html {
 .Gold h2,
 .Silver h2,
 .Bronze h2{
-    padding-left: 630px;
+    padding-left: 480px;
     margin-bottom: 10px;
 }
 
@@ -277,8 +277,8 @@ body , html {
 
 .Package div{
     width: 80%;
-    height : 250px;
-    background-size: 600px 250px;
+    height : 200px;
+    background-size: 400px 200px;
     background-repeat: no-repeat; 
     transition: 0.6s;
 }
@@ -286,10 +286,8 @@ body , html {
 
 .Package ul{
     list-style-position: inside;
-    padding-left: 630px;
+    padding-left: 480px;
     color:var(--subtitles);
-    line-height : 25px;
-    font-size : 16px;
 }
 
 
@@ -312,13 +310,12 @@ body , html {
     height : 40px;
     font-size:20px;
     border-style:solid;
-    border-radius: 20%/ 90%;
+    border-radius: 10%/ 90%;
     border-color: var(--titles);
     background-repeat: no-repeat;
     background-color: var(--secondary-color);
     color :var(--subtitles);
     transition: 0.6s;
-    margin-left: 900px;
 
 }
 
@@ -332,16 +329,18 @@ body , html {
     text-align: center;
     color :var(--titles);
     padding-top: 100px ;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 #type{
     width: 100px;
     text-align: center;
-    margin-left: 642px;
+    margin-left: 605px;
     border: 2px solid var(--titles);
     border-radius: 25px;
     padding: 1px,1px,1px,1px;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 #country{
@@ -375,21 +374,23 @@ body , html {
 #namesglobal{
     font-size: large;
     color :var(--titles);
+    font-weight: bold;
 }
 
 #nameslocal{
     font-size: large;
     color :var(--titles);
+    font-weight: bold;
 }
 
 #global img:hover {
-    transform:scale(1.06);
+    transform:scale(1.03);
     cursor: pointer;
     filter: brightness(75%);
 }
 
 #local img:hover {
-    transform:scale(1.06);
+    transform:scale(1.03);
     cursor: pointer;
     filter: brightness(75%);
 }
