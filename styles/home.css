@@ -261,7 +261,7 @@ body , html {
 
 
 .Package{
-    margin: 100px 0;
+    padding: 100px 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -271,7 +271,7 @@ body , html {
 
 .Package h1{
     color :var(--titles);
-    margin-bottom: 20px;
+    padding: 20px;
     text-align: center;
 }
 
