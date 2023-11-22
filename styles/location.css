@@ -1,21 +1,21 @@
 #locations h1{
     text-align: center;
-    color : rgba(2, 67, 207, 0.767);
+    color: black;
 }
 
 #type{
     width: 100px;
     text-align: center;
     margin-left: 642px;
-    border: 2px solid rgba(2, 67, 207, 0.767);
+    color: black;
     border-radius: 25px;
     padding: 100,100,100,100;
-    color : rgb(243, 35, 156);
+    color: black;
 }
 
 #country{
     font-size: 50px;
-    color : rgb(243, 35, 156);
+    color: black;
     margin-bottom: 1%;
 }
 
