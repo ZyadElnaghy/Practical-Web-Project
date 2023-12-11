@@ -20,6 +20,8 @@ body , html {
     justify-content: space-between;
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 header {
     display: flex;
@@ -134,11 +136,18 @@ nav ul li a:hover {
     transform: scale(1.06);
 } 
 
+.home-content{
+    width: 1600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .services{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10vh;
     /* justify-content: center;
     height: auto;
     padding: 0 20px; */
@@ -148,7 +157,7 @@ nav ul li a:hover {
     font-size: 45px;
     color: black;
     text-transform: capitalize;
-    /* margin-bottom: 20px; */
+    margin-bottom: 30px;
 }
 
 .services-container{
@@ -170,13 +179,13 @@ nav ul li a:hover {
 .travel-services, .hotel-services{
     display: grid;
     /* grid-template-columns: 500px 150px; */
-    grid-template-rows: 250px 65px;
+    grid-template-rows: 200px 65px;
     background-color: #fff8f8;
     padding: 40px;
     width: 50%;
-    height: 300px;
+    height: auto;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    margin: 20px 20px;
+    margin: 0 10px;
     border: 1px solid rgb(188, 186, 186);
     transition: all .3s;
 }
@@ -244,10 +253,36 @@ nav ul li a:hover {
     background-image: url(../assets/Bronze.jpg);
 }
 
+.Platinum,
+.Gold,
+.Silver,
+.Bronze{
+    border: .5px;
+    padding: 20px;
+}
+
+.Platinum h2,
+.Gold h2,
+.Silver h2,
+.Bronze h2{
+    padding-left: 480px;
+    margin-bottom: 10px;
+}
+
 
 .Package{
-    padding-left: 200px;
-    padding-top: 100px;
+    padding: 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Package h1{
+    color :var(--titles);
+    padding: 20px;
+    text-align: center;
 }
 
 .Package div{
@@ -256,16 +291,6 @@ nav ul li a:hover {
     background-size: 400px 200px;
     background-repeat: no-repeat; 
     transition: 0.6s;
-}
-
-
-
-.Package h1{
-    padding-left: 360px;
-    color :var(--titles);
-}
-.Package h2{
-    padding-left: 480px;
 }
 
 
@@ -291,6 +316,8 @@ nav ul li a:hover {
 
 
 .learn-more{
+    width: 150px;
+    height : 40px;
     font-size:20px;
     border-style:solid;
     border-radius: 10%/ 90%;
@@ -312,15 +339,18 @@ nav ul li a:hover {
     text-align: center;
     color :var(--titles);
     padding-top: 100px ;
+    margin-bottom: 25px;
 }
 
 #type{
     width: 100px;
     text-align: center;
-    margin-left: 642px;
+    margin-left: 605px;
     border: 2px solid var(--titles);
     border-radius: 25px;
     padding: 1px,1px,1px,1px;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 #country{
@@ -354,21 +384,23 @@ nav ul li a:hover {
 #namesglobal{
     font-size: large;
     color :var(--titles);
+    font-weight: bold;
 }
 
 #nameslocal{
     font-size: large;
     color :var(--titles);
+    font-weight: bold;
 }
 
 #global img:hover {
-    transform:scale(1.06);
+    transform:scale(1.03);
     cursor: pointer;
     filter: brightness(75%);
 }
 
 #local img:hover {
-    transform:scale(1.06);
+    transform:scale(1.03);
     cursor: pointer;
     filter: brightness(75%);
 }
@@ -442,4 +474,18 @@ nav ul li a:hover {
     width: 100%;
     padding-top: 200px;
     font-size: 14px;
+}
+
+
+
+@media screen and (max-width: 1650px) {
+    .home-content{
+        width: 1400px;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .home-content{
+        width: 1200px;
+    }
 }
