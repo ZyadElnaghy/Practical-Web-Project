@@ -5,24 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/home.css">
     <title>Travelago</title>
+    <script>
+        function nv(){
+            var navbar = document.getElementById("navbar");
+            var scrollvalue = window.scrollY;
+            if(scrollvalue < 83 ){
+                navbar.classList.remove("new-nav");
+            }
+            else{
+                navbar.classList.add("new-nav");
+            }
+            
+        }
+        window.addEventListener("scroll",nv);
+    </script>
 </head>
 <body>
+
+    <p id="home"></p>
     <div class="page">
         
-        <section class = "Main">
+        <section class = "Main"> 
             <header>
                 <img src="assets/logo.svg" alt="">
             </header>
-            
-            <nav id = "navbar">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#location">Destination</a></li>
-                    <li><a href="#package">Packages</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="contact_us.html">Contact Us</a></li>
-                </ul>
-            </nav>
+            <div class="fixed">
+                <nav id = "navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#location">Destination</a></li>
+                        <li><a href="#package">Packages</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="About_Us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
             
             <div class="title">
                 <h2 >Journey to explore world</h2>
@@ -168,7 +185,8 @@
             <button  class="learn-more">Learn More ...</button>
         </center>
     </div>
-</div>  
+
+
 
 
     <p id="about" ></p>

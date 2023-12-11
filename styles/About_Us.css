@@ -9,27 +9,27 @@
 }
 
 /* navbar */
-
+/* 
 .navbar {
   display: block;
   position: fixed;
   list-style-type: none;
   margin: 0;
-  padding: 25px; /* Add the unit (e.g., pixels) to the padding value */
+  padding: 25px; 
   overflow: hidden;
-  /* background-color: #164a4a; */
-  width: 100%; /* Make the navbar take up the full width of the page */
+  width: 100%;
   --gunmetal: rgb(59, 120, 200);
   background: var(--gunmetal);
 }
 
 .navbar li {
   float: left;
-  margin-right: 30px; /* Adjust the right margin to increase space between items */
+  margin-right: 30px; 
+
 }
 
 .navbar li:last-child {
-  margin-right: 0; /* Remove right margin from the last item to prevent extra spacing */
+  margin-right: 0; 
 }
 
 .navbar li a {
@@ -43,7 +43,7 @@
 .navbar li a:hover {
   background-color: #ddd;
   color: black;
-}
+} */
 
 /* About Us */
 
