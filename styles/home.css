@@ -157,6 +157,12 @@ nav ul li a:hover {
 .searchForm div {
     margin: 0 auto;
     width: 100%;
+    
+}
+
+.searchForm div:nth-child(3) input , .searchForm div:nth-child(4) input {
+    text-transform: uppercase;
+    color : rgb(123, 123, 123);
 }
 
 .searchForm div label {
@@ -191,75 +197,6 @@ button:hover {
     cursor: pointer;
 }
 
-.destinition{
-    padding-bottom: 50px;
-}
-
-.uncover_place{
-    color: hsl(214, 56%, 58% );
-    text-align: center;
-    text-transform: uppercase;
-    font-size: small;
-    padding-bottom: 20px;
-    margin-top: 65px;
-    font-size: 16px;
-}
-
-.destinitions h2{
-    color: hsl(208, 97%, 12%);
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 45px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.imgcountries img{
-    width: 370px;
-    height: 425px;
-    border-radius: 25px;
-}
-
-.imgcountries{
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    column-gap: 30px;
-}
-
-.name{
-    background-color: white;
-    width: 300px;
-    height: 140px;
-    border-radius: 25px;
-    position: relative;
-    top: -164px;
-    right: -35px;
-}
-
-
-.italy, .dubai, .japan{
-    color: hsl(214, 56%, 58%);
-    padding-top: 21px;
-    padding-left: 15px;
-    text-transform: uppercase;
-    font-size: small;
-}
-
-.place{
-    color: hsl(206, 34%, 20%);
-    padding-top: 10px;
-    padding-left: 15px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.statement{
-    color: hsl(225, 8%, 42%);
-    padding-top: 8px;
-    padding-left: 15px;
-}
-
 
 
 /* package */.package-card1 {
@@ -288,6 +225,7 @@ button:hover {
     line-height: 1.4;
 }
 
+
 .package-contains{
     padding-left:30px;
     padding-top: 25px;
@@ -301,49 +239,12 @@ button:hover {
     max-height: 300px;
 }
 
-.package-title{
-    display:block;
-    margin-bottom: 10px;
-    line-height: 1.4;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: hsl(206, 34%, 20%);
-    font-size: calc(16px + 0.45vw);
-
-
-} 
-
-
-
-/* meta  */
-.meta p{
-    display:inline-block;
-
-}
-.meta{
-    background-color:rgb(255, 255, 255);
-    text-align: center;
-    display: block;
-    width: 300px;
-    height: 50px;
-    margin: 25px ;
-    border-radius: 25px;
-    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.15);
-    padding-top: 10px;
-   
-}
-
-#time ,
-#people,
-#map{
-    color : hsl(214, 56%, 58%);
-}
-
-.meta .time ,
-.people {
-    border-right: solid hsl(206, 34%, 20%) 1.5px;
-    padding-right:10px;
-    margin:5px;
+.Package div{
+    width: 80%;
+    height : 200px;
+    background-size: 400px 200px;
+    background-repeat: no-repeat; 
+    transition: 0.6s;
 }
 
 
@@ -378,8 +279,7 @@ button:hover {
 .head2{
     font-weight: 800;
     font-size: calc(18px + 1.6vw);
-    color: hsl(206, 34%, 20%);
-  
+    color: hsl(206, 34%, 20%); 
 }
 
 
@@ -433,6 +333,7 @@ button:hover {
     transition: 0.25s ease-in-out;
 }
 
+
 .book-now:hover{
     background-color: hsla(0, 0%, 100%, 0.1);
     cursor: pointer;
@@ -458,6 +359,84 @@ button:hover {
     cursor: pointer;
 }
 
+
+
+
+
+.destinitions{
+    padding-bottom: 50px;
+    margin: 20px auto;
+}
+
+.uncover_place{
+    color: hsl(214, 56%, 58% );
+    text-align: center;
+    text-transform: uppercase;
+    font-size: small;
+    padding-bottom: 20px;
+    margin-top: 65px;
+    font-size: 16px;
+}
+
+.destinitions h2{
+    color: hsl(208, 97%, 12%);
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.imgcountries .photo{
+    border-radius: 25px;
+    position: relative;
+}
+
+.imgcountries .photo img{
+    width: 100%;
+    margin: 20px auto;
+    height: 425px;
+    border-radius: 25px;
+}
+
+.imgcountries{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    column-gap: 30px;
+}
+
+.name{
+    background-color: white;
+    width: 300px;
+    height: 140px;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 6%;
+    left: 10%;
+}
+
+.italy, .dubai, .japan{
+    color: hsl(214, 56%, 58%);
+    padding-top: 21px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.place{
+    color: hsl(206, 34%, 20%);
+    padding-top: 10px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.statement{
+    color: hsl(225, 8%, 42%);
+    padding-top: 8px;
+    padding-left: 15px;
+}
 
 /* Start Footer */
 
