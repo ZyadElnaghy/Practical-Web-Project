@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 :root{
-    --primary-color: #164A4A;
+    --primary-color: #3b79c9;
     --secondary-color: #ffffff;
     --subtitles: #595852;
     --titles:black;
@@ -14,220 +14,178 @@
 body , html {
     font-family: 'Roboto', sans-serif;
 }
-
 .page {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     height: 100%;
     width: 100%;
-    margin: 0;
-    padding: 0;
 }
-
-.navbar{
-    background-color:var(--primary-color);
-    color: var(--secondary-color);
-    font-size: 20px;
-    /* font-weight: bold; */
-    padding: 10px;
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-    text-decoration: none;
-    /* text-transform: uppercase; */
+header {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    box-shadow: 1px 1px 10px #4b4949;
+    padding: 15px 0;
 }
-
-.navbar a{
-    color: var(--secondary-color);
-    text-decoration: none;
-    padding: 20px;
-    transition: 0.5s;
+nav {
+    background-color: transparent;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    height: 60px;
 }
-
-.navbar a:hover{
-    transform: scale(1.15);
-    /* font-weight: bold; */
+.fixed {
+    height: 60px;
 }
-
-.header {
-    height: 100vh;
-    margin-bottom: 50px;
-}
-
-.header-content {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-}
-
-.header-photo{
-    grid-area: 1 / 1 / 13 / 13;
+.new-nav {
+    background-color: var(--secondary-color);
+    color :black;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
-    object-fit: cover;
+    z-index: 6;
+    transition: background-color 0.5s ease-in-out;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.new-nav ul li a {
+    color: var(--titles);
 }
 
-.header-text{
-    grid-area: 2 / 4 / 4 / 10;
-    width: fit-content;
-    margin: auto;
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px auto;
 }
 
-.header-text h1{
-    position: relative;
-    /* background-color: wheat; */
-    padding: 10px;
-    color:var(--primary-color);
+nav ul li a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: 0.25s ease-in-out;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.Main {
+    background-image: url(../assets/hero-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    background-blend-mode: overlay;
+    height: 800px;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 750px;
+    margin: 20px auto;
+    text-align: center;
+    height: 40%;
+}
+
+.title h2 {
+    color: var(--secondary-color);
     font-size: 60px;
     font-weight: bold;
-    transition: all .3s;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin: 20px;
+}
+
+.title p{
+    color: var(--secondary-color);
+    font-size: 15px;
     margin: 0;
-    z-index: 3;
-}
-.header-text h1:hover{
-    color: transparent;
-    -webkit-text-stroke: 3px var(--primary-color);
 }
 
-.header-text p{
-    /* background-color: wheat; */
-    padding: 10px;
-    color:var(--primary-color);
-    font-size: 25px;
-    font-weight: bold;
+.buttons-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
 }
 
-.header-button {
-    grid-area: 4 / 6 / span 1 / span 2;
-    margin: auto;
+.book-button , .learn-button{
     background-color:var(--primary-color);
     padding: 10px 20px;
     color: white;
     text-decoration: none;
     font-size: 25px;
-    font-weight: bold;
     width: fit-content;
     transition: 0.3s;
-    border-radius: 10px;
-    z-index: 3;
-
+    border-radius: 30px;
 }
 
-.header-button:hover{
+.learn-button{
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+}
+
+.book-button:hover , .learn-button:hover{
     background-color: white;
     color:var(--primary-color);
     transform: scale(1.06);
-}
+} 
 
-.home-content{
-    width: 1600px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.search-section{ 
+    background-color: var(--primary-color);
+    padding: 100px 0;
 }
-
-.services{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: center;
-    height: auto;
-    padding: 0 20px; */
-}
-
-.services-title{
-    font-size: 45px;
-    color: black;
-    text-transform: capitalize;
-    margin-bottom: 30px;
-}
-
-.services-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    padding: 0 20px;
-}
-
-.services-container p{
-    font-size: 22px;
-    color: black;
-    word-spacing: 3px;
-    margin-bottom: 20px;
-}
-
-.travel-services, .hotel-services{
+.searchForm{
     display: grid;
-    /* grid-template-columns: 500px 150px; */
-    grid-template-rows: 200px 65px;
-    background-color: #fff8f8;
-    padding: 40px;
-    width: 50%;
-    height: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    margin: 0 10px;
-    border: 1px solid rgb(188, 186, 186);
-    transition: all .3s;
+    width: 90%;
+    margin:  auto;
+    gap: 10px;
+    grid-template-columns: repeat(5,1fr);
+    align-items: flex-end;
 }
 
-.travel-services:hover, .hotel-services:hover{
-    transform: scale(1.006);
+.searchForm div {
+    margin: 0 auto;
+    width: 100%;
 }
 
-.service-card-text{
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    color: black;
-    margin-bottom: 0;
-    display: flex;
-    align-items: start;
-    justify-content: start;
+.searchForm div label {
+    color: var(--secondary-color);
+    font-size: 15px;
+    text-transform:capitalize;
+    margin-bottom: 10px;
+    display: block;
+    padding: 0 30px;
 }
 
-.hotel-services-title, .travel-services-title{
-    font-size: 30px;
-    color: black;
-    margin-bottom: 0;
-    display: flex;
-    align-items: center;
+.searchForm div input , .searchForm button {
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    width: 100%;
 }
 
-.icon{
-    padding: 10px;
+.searchForm button {
+    align-self: flex-end;
+    border : 2px solid var(--secondary-color);	
+    background-color: transparent;
+    color: var(--secondary-color);
+    transition: 0.3s;
 }
 
-.service-button{
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    background-color: whitesmoke;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    padding: 20px;
-    font-size: 22px;
-    font-weight: bold;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    transition: all .3s;
-}
-
-.service-button:hover{
-    background-color:var(--primary-color);
-    color: white;
-    transform: scale(1.06);
+button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    cursor: pointer;
 }
 
 .Platinum{
@@ -243,36 +201,10 @@ body , html {
     background-image: url(../assets/Bronze.jpg);
 }
 
-.Platinum,
-.Gold,
-.Silver,
-.Bronze{
-    border: .5px;
-    padding: 20px;
-}
-
-.Platinum h2,
-.Gold h2,
-.Silver h2,
-.Bronze h2{
-    padding-left: 480px;
-    margin-bottom: 10px;
-}
-
 
 .Package{
-    padding: 100px 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.Package h1{
-    color :var(--titles);
-    padding: 20px;
-    text-align: center;
+    padding-left: 200px;
+    padding-top: 100px;
 }
 
 .Package div{
@@ -281,6 +213,16 @@ body , html {
     background-size: 400px 200px;
     background-repeat: no-repeat; 
     transition: 0.6s;
+}
+
+
+
+.Package h1{
+    padding-left: 360px;
+    color :var(--titles);
+}
+.Package h2{
+    padding-left: 480px;
 }
 
 
@@ -306,8 +248,6 @@ body , html {
 
 
 .learn-more{
-    width: 150px;
-    height : 40px;
     font-size:20px;
     border-style:solid;
     border-radius: 10%/ 90%;
@@ -316,7 +256,6 @@ body , html {
     background-color: var(--secondary-color);
     color :var(--subtitles);
     transition: 0.6s;
-
 }
 
 .learn-more:hover{
@@ -324,77 +263,74 @@ body , html {
     cursor: pointer;
 }
 
-
-#locations h1{
-    text-align: center;
-    color :var(--titles);
-    padding-top: 100px ;
-    margin-bottom: 25px;
+.destinition{
+    padding-bottom: 50px;
 }
 
-#type{
-    width: 100px;
+.uncover_place{
+    color: hsl(214, 56%, 58% );
     text-align: center;
-    margin-left: 605px;
-    border: 2px solid var(--titles);
+    text-transform: uppercase;
+    font-size: small;
+    padding-bottom: 20px;
+    margin-top: 65px;
+    font-size: 16px;
+}
+
+.destinitions h2{
+    color: hsl(208, 97%, 12%);
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.imgcountries img{
+    width: 370px;
+    height: 425px;
     border-radius: 25px;
-    padding: 1px,1px,1px,1px;
-    margin-bottom: 10px;
-    margin-top: 20px;
 }
 
-#country{
-    color :var(--subtitles);
+.imgcountries{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    column-gap: 30px;
 }
 
-#locations {
-    display:fixed;
-    padding-left: 60px;
-    padding-right: 60px;
+.name{
+    background-color: white;
+    width: 300px;
+    height: 140px;
+    border-radius: 25px;
+    position: relative;
+    top: -164px;
+    right: -35px;
 }
 
-#global img{
-    flex-direction: row;
-    width: 325px;
-    height: 342px;
-    border-radius: 25px ;
-    padding: 0.6%;
-    transition: 0.5s;
+
+.italy, .dubai, .japan{
+    color: hsl(214, 56%, 58%);
+    padding-top: 21px;
+    padding-left: 15px;
+    text-transform: uppercase;
+    font-size: small;
 }
 
-#local img{
-    flex-direction: row;
-    width: 325px;
-    height: 342px;
-    border-radius: 25px ;
-    padding: 0.6%;
-    transition: 0.5s;
-}
-
-#namesglobal{
-    font-size: large;
-    color :var(--titles);
+.place{
+    color: hsl(206, 34%, 20%);
+    padding-top: 10px;
+    padding-left: 15px;
+    text-transform: uppercase;
     font-weight: bold;
+    font-size: 20px;
 }
 
-#nameslocal{
-    font-size: large;
-    color :var(--titles);
-    font-weight: bold;
+.statement{
+    color: hsl(225, 8%, 42%);
+    padding-top: 8px;
+    padding-left: 15px;
 }
-
-#global img:hover {
-    transform:scale(1.03);
-    cursor: pointer;
-    filter: brightness(75%);
-}
-
-#local img:hover {
-    transform:scale(1.03);
-    cursor: pointer;
-    filter: brightness(75%);
-}
-
 
 .footer {
     background-color:var(--primary-color);
