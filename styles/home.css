@@ -21,7 +21,8 @@ body , html {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    width: 100%;
+    width: 1300px;
+    margin: 0 auto;
 }
 header {
     display: flex;
