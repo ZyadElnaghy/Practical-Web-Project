@@ -29,7 +29,6 @@ header {
 }
 nav {
     background-color: transparent;
-    transition: background-color 0.5s ease-in-out;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     height: 60px;
 }
@@ -100,7 +99,6 @@ nav ul li a:hover {
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 20px;
-    /* transition: all .3s; */
     margin: 20px;
 }
 
@@ -140,176 +138,251 @@ nav ul li a:hover {
     transform: scale(1.06);
 } 
 
-.services{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10vh;
-    /* justify-content: center;
-    height: auto;
-    padding: 0 20px; */
+.search-section{ 
+    background-color: var(--primary-color);
+    padding: 100px 0;
 }
-
-.services-title{
-    font-size: 45px;
-    color: black;
-    text-transform: capitalize;
-    /* margin-bottom: 20px; */
-}
-
-.services-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: auto;
-    padding: 0 20px;
-}
-
-.services-container p{
-    font-size: 22px;
-    color: black;
-    word-spacing: 3px;
-    margin-bottom: 20px;
-}
-
-.travel-services, .hotel-services{
+.searchForm{
     display: grid;
-    /* grid-template-columns: 500px 150px; */
-    grid-template-rows: 250px 65px;
-    background-color: #fff8f8;
-    padding: 40px;
-    width: 50%;
-    height: 300px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    margin: 20px 20px;
-    border: 1px solid rgb(188, 186, 186);
-    transition: all .3s;
+    width: 90%;
+    margin:  auto;
+    gap: 10px;
+    grid-template-columns: repeat(5,1fr);
+    align-items: flex-end;
 }
 
-.travel-services:hover, .hotel-services:hover{
-    transform: scale(1.006);
+.searchForm div {
+    margin: 0 auto;
+    width: 100%;
 }
 
-.service-card-text{
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    color: black;
-    margin-bottom: 0;
-    display: flex;
-    align-items: start;
-    justify-content: start;
+.searchForm div label {
+    color: var(--secondary-color);
+    font-size: 15px;
+    text-transform:capitalize;
+    margin-bottom: 10px;
+    display: block;
+    padding: 0 30px;
 }
 
-.hotel-services-title, .travel-services-title{
-    font-size: 30px;
-    color: black;
-    margin-bottom: 0;
-    display: flex;
-    align-items: center;
+.searchForm div input , .searchForm button {
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+    padding: 10px 20px;
+    width: 100%;
 }
 
-.icon{
-    padding: 10px;
+.searchForm button {
+    align-self: flex-end;
+    border : 2px solid var(--secondary-color);	
+    background-color: transparent;
+    color: var(--secondary-color);
+    transition: 0.3s;
 }
 
-.service-button{
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    background-color: whitesmoke;
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    padding: 20px;
-    font-size: 22px;
-    font-weight: bold;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    transition: all .3s;
-}
-
-.service-button:hover{
-    background-color:var(--primary-color);
-    color: white;
-    transform: scale(1.06);
-}
-
-.Platinum{
-    background-image: url(../assets/Platinum.jpg);
-}
-.Gold{
-    background-image: url(../assets/Gold.jpg);
-}
-.Silver{
-    background-image: url(../assets/Silver.jpg);
-}
-.Bronze{
-    background-image: url(../assets/Bronze.jpg);
-}
-
-
-.Package{
-    padding-left: 200px;
-    padding-top: 100px;
-}
-
-.Package div{
-    width: 80%;
-    height : 200px;
-    background-size: 400px 200px;
-    background-repeat: no-repeat; 
-    transition: 0.6s;
-}
-
-
-
-.Package h1{
-    padding-left: 360px;
-    color :var(--titles);
-}
-.Package h2{
-    padding-left: 480px;
-}
-
-
-.Package ul{
-    list-style-position: inside;
-    padding-left: 480px;
-    color:var(--subtitles);
-}
-
-
-.Package div:hover {
-    transform:scale(1.008);
+button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     cursor: pointer;
 }
 
 
-.Package div{
-    border-color: var(--titles);
-    border-style:solid;
-    border-radius: 10%/ 90%;
 
+/* package */.package-card1 {
+    background-image: url(../assets/package-card1.jpg);
+}
+.package-card2 {
+    background-image: url(../assets/package-card2.jpg);
+}
+.package-card3 {
+    background-image: url(../assets/package-card3.jpg);
 }
 
 
-.learn-more{
-    font-size:20px;
-    border-style:solid;
-    border-radius: 10%/ 90%;
-    border-color: var(--titles);
+.package-card1,
+.package-card2,
+.package-card3{
+    width: 1000px;
+    border-radius: 15px ;
+    height : 300px;
     background-repeat: no-repeat;
-    background-color: var(--secondary-color);
-    color :var(--subtitles);
-    transition: 0.6s;
-
+    background-size: 330px 300px;
+    display: grid;
+    grid-template-columns: 330px 420px 250px;
+    background-color: hsl(214, 56%, 58%);
+    margin: 30px auto 0px auto;
+    line-height: 1.4;
 }
 
-.learn-more:hover{
-    transform:scale(1.008);
+.package-contains{
+    padding-left:30px;
+    padding-top: 25px;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(225, 8%, 42%);
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    display: grid;
+    grid-template-rows: auto 300px;
+
+    max-height: 300px;
+}
+
+.package-title{
+    display:block;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: hsl(206, 34%, 20%);
+    font-size: calc(16px + 0.45vw);
+
+
+} 
+
+
+
+/* meta  */
+.meta p{
+    display:inline-block;
+
+}
+.meta{
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin: 25px ;
+    border-radius: 25px;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.15);
+    padding-top: 10px;
+   
+}
+
+#time ,
+#people,
+#map{
+    color : hsl(214, 56%, 58%);
+}
+
+.meta .time ,
+.people {
+    border-right: solid hsl(206, 34%, 20%) 1.5px;
+    padding-right:10px;
+    margin:5px;
+}
+
+
+
+
+/* headings */
+
+.package-heading{
+   text-align: center;
+   width: 900px;
+   margin: 0px auto;
+   font-family: "Montserrat", sans-serif;
+}
+
+
+.head3{
+   color: hsl(225, 8%, 42%);
+   width: 550px;
+   margin: auto;
+}
+
+.head1{
+    color: hsl(214, 57%, 51%);
+}
+
+.head1 , 
+.head2{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.head2{
+    font-weight: 800;
+    font-size: calc(18px + 1.6vw);
+    color: hsl(206, 34%, 20%);
+  
+}
+
+
+
+/*  package details */
+
+
+.package-details{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;;
+}
+
+#closed-star{
+    color: rgb(226, 223, 223);
+}
+
+.rating{
+    width : 250px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+
+
+
+.price{
+    width: 250px;
+    text-align: center;
+    line-height: 20px;;
+    font-size: 12px;;
+}
+.dollar{
+    font-size: calc(18px + 1.6vw);
+    font-weight: 800;
+    margin-right: 0px;
+}
+
+
+.book-now{
+    width:150px;
+    height:50px;
+    margin: 50px;
+    margin-top: 10px;
+    border-radius: 100px;
+    color: white;
+    background-color: hsl(214, 56%, 58%);
+    font-size: 16px;
+    text-transform: uppercase ;
+    border: solid white 1px;
+    transition: 0.25s ease-in-out;
+}
+
+.book-now:hover{
+    background-color: hsla(0, 0%, 100%, 0.1);
+    cursor: pointer;
+}
+
+
+
+.view-all-packages{
+    color:white;
+    text-align: center;
+    width: 250px;
+    background-color: hsl(214, 57%, 51%);
+    height:30px;
+    padding-top: 5px;
+    margin: 50px auto;
+    border-radius: 100px;
+    transition: 0.25s ease-in-out;
+    text-transform: uppercase;
+}
+
+.view-all-packages:hover{
+    background-color:hsl(214, 72%, 33%);
     cursor: pointer;
 }
 
@@ -325,6 +398,7 @@ nav ul li a:hover {
     text-transform: uppercase;
     font-size: small;
     padding-bottom: 20px;
+    margin-top: 65px;
     font-size: 16px;
 }
 
