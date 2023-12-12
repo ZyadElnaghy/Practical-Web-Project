@@ -6,6 +6,8 @@
 }
 :root{
     --primary-color: #3b79c9;
+    --main-color: #223644;
+    --dark-main-color: #1C2E3B;
     --secondary-color: #ffffff;
     --subtitles: #595852;
     --titles:black;
@@ -193,43 +195,87 @@ button:hover {
     cursor: pointer;
 }
 
-.Platinum{
-    background-image: url(../assets/Platinum.jpg);
-}
 
+
+/* package */.package-card1 {
+    background-image: url(../assets/package-card1.jpg);
+}
 .Gold{
     background-image: url(../assets/Gold.jpg);
 }
-
 .Silver{
     background-image: url(../assets/Silver.jpg);
 }
-
 .Bronze{
     background-image: url(../assets/Bronze.jpg);
 }
 
-.Package{
-    padding-left: 200px;
-    padding-top: 100px;
+.package-contains{
+    padding-left:30px;
+    padding-top: 25px;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(225, 8%, 42%);
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    display: grid;
+    grid-template-rows: auto 300px;
+
+    max-height: 300px;
 }
 
-.Package div{
-    width: 80%;
-    height : 200px;
-    background-size: 400px 200px;
-    background-repeat: no-repeat; 
-    transition: 0.6s;
+.package-title{
+    display:block;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: hsl(206, 34%, 20%);
+    font-size: calc(16px + 0.45vw);
+
+
+} 
+
+
+
+/* meta  */
+.meta p{
+    display:inline-block;
+
+}
+.meta{
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+    display: block;
+    width: 300px;
+    height: 50px;
+    margin: 25px ;
+    border-radius: 25px;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.15);
+    padding-top: 10px;
+   
+}
+
+#time ,
+#people,
+#map{
+    color : hsl(214, 56%, 58%);
+}
+
+.meta .time ,
+.people {
+    border-right: solid hsl(206, 34%, 20%) 1.5px;
+    padding-right:10px;
+    margin:5px;
 }
 
 .Package h1{
     padding-left: 360px;
     color :var(--titles);
 }
-
 .Package h2{
     padding-left: 480px;
 }
+
 
 .Package ul{
     list-style-position: inside;
@@ -237,8 +283,8 @@ button:hover {
     color:var(--subtitles);
 }
 
-.Package div:hover {
-    transform:scale(1.008);
+.book-now:hover{
+    background-color: hsla(0, 0%, 100%, 0.1);
     cursor: pointer;
 }
 
@@ -246,7 +292,9 @@ button:hover {
     border-color: var(--titles);
     border-style:solid;
     border-radius: 10%/ 90%;
+
 }
+
 
 .learn-more{
     font-size:20px;
@@ -259,10 +307,12 @@ button:hover {
     transition: 0.6s;
 }
 
-.learn-more:hover{
-    transform:scale(1.008);
+.view-all-packages:hover{
+    background-color:hsl(214, 72%, 33%);
     cursor: pointer;
 }
+
+
 
 .destinitions{
     padding-bottom: 50px;
@@ -339,77 +389,246 @@ button:hover {
     padding-left: 15px;
 }
 
-.footer {
-    background-color:var(--primary-color);
-    color: var(--secondary-color);
-    font-size: 20px;
+/* Start Footer */
+
+footer {
+    height: 900px;
+    background-color: var(--main-color);
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 1fr) auto;
+}
+
+/* [1] Start Upper-Footer */
+
+footer .upper-footer {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .upper-footer .container {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .upper-footer .container .some-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+footer .upper-footer p {
+    color: white;
+    /* font-size: 1.2rem; */
+    margin-bottom: 10px;
+    width: 85%;
+}
+
+footer .upper-footer p:first-of-type {
+    text-transform: uppercase;
+}
+
+footer .upper-footer p:nth-of-type(2) {
+    text-transform: uppercase;
+    font-size: 40px;
     font-weight: bold;
-    padding: 50px 0 10px 0;
-    /* margin-top: auto; */
-    align-self: flex-end;
+}
+
+footer .upper-footer button {
+    margin: 20px;
+    color: white;
+    outline: none;
+    background-color: transparent;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    border: 2px white solid;
+    transition: 0.3s ease-in-out;
+}
+
+footer .upper-footer button:hover {
+    background-color: rgba(255, 255, 255, .2);
+    transform: scale(1.1);
+}
+
+/* [1] End Upper Footer */
+
+
+/* [2] Start Mid Footer */
+
+footer .mid-footer {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .mid-footer .container {
+    margin: 20px auto;
+    max-width: 1180px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer .mid-footer .container > div {
+    margin: 50px;
+}
+
+footer .mid-footer .container .footer-brand p {
+    margin-top: 20px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+footer .mid-footer .container .footer-contact  h4 {
+    color: white;
+    font-weight: normal;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+footer .mid-footer .container .footer-contact  h4::after {
+    content: "";
+    height: 2px;
+    width: 50px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 20px;
+}
+
+footer .mid-footer .footer-contact p {
+    color: white;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+footer .mid-footer ul {
+    list-style-type: none;
+}
+
+footer .mid-footer ul li {
+    margin: 20px;
+    margin-left: 40px;
+    position: relative;
+}
+
+footer .mid-footer ul li::before {
+    content: "-_-";
+    position: absolute;
+    left: -40px;
+    color: white;
+}
+
+footer .mid-footer ul li a{
+    color: white;
     text-decoration: none;
-    /* text-transform: uppercase; */
+}
+
+footer .mid-footer .footer-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+footer .mid-footer .footer-form p {
+    color: white;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+footer .mid-footer .footer-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .mid-footer form input,
+footer .mid-footer form button {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items:first center;
-    justify-content: center;
+    margin: 5px;
+    border-radius: 30px;
+    padding: 12px 30px;
+    outline: none;
+    border: 0;
 }
 
-.upper-footer{
-    display: flex;
-    flex-direction: row;
-    align-items:first baseline;
-    justify-content: center;
-    width: 100%;
+footer .mid-footer form button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
 }
 
-.footer-links{
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: center;
-    width: fit-content;
-    float: right;
-    padding: 0 10%;
+footer .mid-footer form button:hover {
+
+    background-color: rgba(255, 255, 255, .2);
 }
 
-.footer-links-container , .footer-contacts{
+/* [2] End Mid Footer */
+
+
+/* [3] Start Lower-Footer */
+
+footer .lower-footer {
+    background-color: var(--dark-main-color);
     display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-    padding: 0 10%;
-    font-size: 18px;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
 }
 
-.footer a , .footer-contacts p {
-    color: var(--secondary-color);
+footer .lower-footer p {
+    margin: 20px;
+}
+
+footer .lower-footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .lower-footer ul li {
+    position: relative;
+    margin: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+footer .lower-footer a {
     text-decoration: none;
-    padding: 10px 0;
-    transition: 0.3s;
-
+    color: inherit;
 }
 
-.footer a:hover , .footer-contacts p:hover{
-    transform: translateX(10px);
+footer .lower-footer ul li:hover {
+    transform: scale(1.05);
 }
 
-.footer-underline{
-    width: 35%;
+footer .lower-footer ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: rgba(255, 255, 255, .3);
 }
 
-.lower-footer{
-    display: flex;
-    flex-direction: row;
-    align-items:first baseline;
-    justify-content: center;
-    width: 100%;
-    padding-top: 200px;
-    font-size: 14px;
-}
+/* [3] Start Lower-Footer */
 
 
+/* End Footer */
 
 @media screen and (max-width: 1650px) {
     .home-content{
