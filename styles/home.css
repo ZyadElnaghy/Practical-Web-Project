@@ -139,11 +139,11 @@ nav ul li a:hover {
     color:var(--primary-color);
     transform: scale(1.06);
 } 
+
 .search-section{ 
     background-color: var(--primary-color);
     padding: 100px 0;
 }
-
 .searchForm{
     display: grid;
     width: 90%;
@@ -156,6 +156,12 @@ nav ul li a:hover {
 .searchForm div {
     margin: 0 auto;
     width: 100%;
+    
+}
+
+.searchForm div:nth-child(3) input , .searchForm div:nth-child(4) input {
+    text-transform: uppercase;
+    color : rgb(123, 123, 123);
 }
 
 .searchForm div label {
@@ -174,11 +180,6 @@ nav ul li a:hover {
     font-size: 15px;
     padding: 10px 20px;
     width: 100%;
-    color: rgb(123, 123, 123);
-}
-
-.searchForm div:nth-child(3) input , .searchForm div:nth-child(4) input {
-    text-transform: uppercase;
 }
 
 .searchForm button {
@@ -277,8 +278,7 @@ button:hover {
 .head2{
     font-weight: 800;
     font-size: calc(18px + 1.6vw);
-    color: hsl(206, 34%, 20%);
-  
+    color: hsl(206, 34%, 20%); 
 }
 
 
@@ -337,6 +337,7 @@ button:hover {
     background-color: hsla(0, 0%, 100%, 0.1);
     cursor: pointer;
 }
+
 
 
 .view-all-packages{
