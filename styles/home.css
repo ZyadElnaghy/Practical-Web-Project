@@ -604,21 +604,23 @@ footer .mid-footer ul {
 }
 
 footer .mid-footer ul li {
-    margin: 20px;
-    margin-left: 40px;
+    margin: 20px 0;
     position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-footer .mid-footer ul li::before {
-    content: "-_-";
-    position: absolute;
-    left: -40px;
-    color: white;
-}
 
 footer .mid-footer ul li a{
+    margin-left: 5px;
     color: white;
     text-decoration: none;
+}
+
+footer .mid-footer ul li a span {
+    display: inline-block;
+    width: 5px;
 }
 
 footer .mid-footer .footer-form {
