@@ -400,9 +400,6 @@ button:hover {
     cursor: pointer;
 }
 
-
-
-
 .destinations{
     padding-bottom: 50px;
     margin: 20px auto;
@@ -528,7 +525,6 @@ button:hover {
     width: 550px;
     margin: auto;
 }
-
 /* Start Footer */
 
 footer {
@@ -712,12 +708,63 @@ footer .mid-footer form button {
 }
 
 footer .mid-footer form button:hover {
-
     background-color: rgba(255, 255, 255, .2);
 }
 
 /* [2] End Mid Footer */
 
+
+/* [3] Start Lower-Footer */
+
+footer .lower-footer {
+    background-color: var(--dark-main-color);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+footer .lower-footer p {
+    margin: 20px;
+}
+
+footer .lower-footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .lower-footer ul li {
+    position: relative;
+    margin: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+footer .lower-footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .lower-footer ul li:hover {
+    transform: scale(1.05);
+}
+
+footer .lower-footer ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+/* [3] Start Lower-Footer */
+
+
+/* End Footer */
 
 /* [3] Start Lower-Footer */
 
