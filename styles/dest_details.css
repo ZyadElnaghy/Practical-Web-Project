@@ -1,0 +1,106 @@
+:root{
+    --primary-color: #3b79c9;
+    --main-color: #223644;
+    --dark-main-color: #1C2E3B;
+    --secondary-color: #ffffff;
+    --subtitles: #595852;
+    --titles:black;
+}
+
+.destination-details-page{
+    width: 100%;
+}
+
+.destination-details{
+    transform: translateY(150px);
+    opacity: 0;
+}
+
+.destination-details.active{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 5px;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    transition: 1s all ease;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.city-pic{
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    float: right;
+    margin: 10px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+.city-description h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.city-description p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: var(--subtitles);
+}
+
+.details li{
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--subtitles);
+}
+
+.dest-album h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.dest-album p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: var(--subtitles);
+}
+
+
+.dest-album{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+
+.dest-album img{
+    width: 50%;
+    height: auto;
+    margin: 0 20px;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    display: block;
+    
+    
+}
+
+.dest-album.active{
+    transform: translateY(0);
+    opacity: 1;
+}
