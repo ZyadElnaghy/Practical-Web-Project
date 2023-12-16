@@ -200,7 +200,9 @@ button:hover {
 
 
 /* packages ... */
-
+#package{
+    padding-top: 90px;
+}
 
 .package-card1 {
     background-image: url(../assets/package-card1.jpg);
@@ -249,8 +251,6 @@ button:hover {
     font-weight: 700;
     color: hsl(206, 34%, 20%);
     font-size: 30px;
-
-
 } 
 
 
@@ -402,7 +402,7 @@ button:hover {
 
 .destinations{
     padding-bottom: 50px;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
 .uncover_place{
