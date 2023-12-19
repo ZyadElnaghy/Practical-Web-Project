@@ -15,21 +15,20 @@
   position: fixed;
   list-style-type: none;
   margin: 0;
-  padding: 25px; /* Add the unit (e.g., pixels) to the padding value */
+  padding: 25px;
   overflow: hidden;
-  /* background-color: #164a4a; */
-  width: 100%; /* Make the navbar take up the full width of the page */
+  width: 100%;
   --gunmetal: rgb(59, 120, 200);
   background: var(--gunmetal);
 }
 
 .navbar li {
   float: left;
-  margin-right: 30px; /* Adjust the right margin to increase space between items */
+  margin-right: 30px;
 }
 
 .navbar li:last-child {
-  margin-right: 0; /* Remove right margin from the last item to prevent extra spacing */
+  margin-right: 0;
 }
 
 .navbar li a {
@@ -216,4 +215,78 @@
 
 .social a:hover {
   transform: scale(1.2);
+}
+
+/* responsive */
+
+@media only screen and (max-width: 800px) {
+  .about img {
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 100px;
+  }
+
+  .abt-text h1 {
+    font-size: 50px;
+  }
+
+  .abt-text p {
+    font-size: 20px;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .abt-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .connectbtn {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .social-icons {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .social-icons a {
+    margin: 0 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footlinks {
+    margin-bottom: 30px;
+  }
+
+  .footlinks h4 {
+    margin-bottom: 20px;
+  }
+
+  .footlinks h4::before {
+    width: 50px;
+  }
+
+  .footlinks ul li {
+    margin-bottom: 10px;
+  }
+
+  .footlinks ul li a {
+    font-size: 15px;
+  }
+
+  .social {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .social a {
+    margin: 0 10px;
+  }
 }
