@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border;
+  box-sizing: border-box; /* Correct the typo in 'border' to 'border-box' */
   font-family: "Poppins", sans-serif;
   text-decoration: none;
   list-style: none;
@@ -12,24 +12,22 @@
 
 .navbar {
   display: block;
-  position: fixed;
   list-style-type: none;
   margin: 0;
-  padding: 25px; /* Add the unit (e.g., pixels) to the padding value */
+  padding: 25px;
   overflow: hidden;
-  /* background-color: #164a4a; */
-  width: 100%; /* Make the navbar take up the full width of the page */
+  width: 100%;
   --gunmetal: rgb(59, 120, 200);
   background: var(--gunmetal);
 }
 
 .navbar li {
   float: left;
-  margin-right: 30px; /* Adjust the right margin to increase space between items */
+  margin-right: 30px;
 }
 
 .navbar li:last-child {
-  margin-right: 0; /* Remove right margin from the last item to prevent extra spacing */
+  margin-right: 0;
 }
 
 .navbar li a {
@@ -54,7 +52,7 @@
 .about div {
   width: 100%;
   display: flex;
-  justify-content: center; /* display horizontally */
+  justify-content: center;
   align-items: center;
 }
 
@@ -72,22 +70,31 @@
 
 .about div a:hover {
   transform: scale(1.1);
-  /* shadow */
   box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px var(--gunmetal),
     inset -20px 0 80px var(--gunmetal), inset 20px 0 300px var(--gunmetal),
     inset -20px 0 300px var(--gunmetal), 0 0 50px #fff,
     -10px 0 80px var(--gunmetal), 10px 0 80px var(--gunmetal);
 }
 
-.made-with {
-  font-size: 30px;
-  --gunmetal: rgb(59, 120, 200);
-  color: var(--gunmetal);
-  font-weight: 200px;
-  text-align: center;
-  margin: 20px;
+/* Media Queries for responsiveness */
 
-  text-shadow: 0 0 10px var(--gunmetal), 0 0 20px var(--gunmetal),
-    0 0 40px var(--gunmetal), 0 0 80px var(--gunmetal),
-    0 0 160px var(--gunmetal);
+@media only screen and (max-width: 600px) {
+  .navbar li {
+    float: none;
+    margin-right: 0;
+  }
+
+  .navbar li a {
+    display: block;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 0;
+  }
+
+  .about div a {
+    padding: 40px;
+    padding-bottom: 100px;
+  }
 }
