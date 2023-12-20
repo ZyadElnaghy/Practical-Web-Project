@@ -24,6 +24,7 @@
         }
         window.addEventListener("scroll",nv);
     </script>
+    
 </head>
 <body>
 
@@ -37,7 +38,7 @@
                 <nav id = "navbar">
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#destinition">Destination</a></li>
+                        <li><a href="#destination">Destination</a></li>
                         <li><a href="#package">Packages</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="About_Us.html">Contact Us</a></li>
@@ -48,9 +49,8 @@
             <div class="title">
                 <h2 >Journey to explore world</h2>
                 <p>
-                    Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit class corporis nostra rem quos
-                    voluptatibus habitant?
-                    Fames, vivamus minim nemo enim, gravida lobortis quasi, eum.
+                    Embark on a transformative journey of self-discovery and cultural exploration,
+                    as you traverse the landscapes of our planet, encountering the rich tapestry of traditions, breathtaking landscapes.
                 </p>
             </div>
             <div class="buttons-group">
@@ -63,22 +63,22 @@
             <form action="" class = "searchForm">
                 <div>
                     <label for="destination"> search Destination *</label>
-                    <input type="text" name = "destination" id = "destination" placeholder="Enter Destination">
+                    <input type="text" name = "destination" id = "destination" placeholder="Enter Destination" required >
                 </div>
 
                 <div>
                     <label for="max-num"> Max Number of People *</label>
-                    <input type="number" name = "max-num" id = "max-num" placeholder="Enter Number of People">
+                    <input type="number" name = "max-num" id = "max-num" placeholder="Enter Number of People" required>
                 </div>
                 
                 <div>
                     <label for="check-in"> Check-in Date *</label>
-                    <input type="date" name = "check-in" id = "check-in" placeholder="Enter Check-in Date">
+                    <input type="date" name = "check-in" id = "check-in" placeholder="Enter Check-in Date" required>
                 </div>
                 
                 <div>
                     <label for="check-out"> Check-out Date *</label>
-                    <input type="date" name = "check-out" id = "check-out" placeholder="Enter Check-out Date">
+                    <input type="date" name = "check-out" id = "check-out" placeholder="Enter Check-out Date" required>
                 </div>
 
                 <button type="submit" class="submit">INQUIRE NOW</button>
@@ -88,83 +88,104 @@
 
     <div class="page">
     <!-- when i click destination come here  -->
-<p id="destinition" ></p> 
-    <section class="destinitions">
-        <div class="uncover_place">uncover place</div>
-        <h2>popular destination</h2>
+<p id="destination" ></p> 
+    <section class="destinations">
+        <div class="three_heads">
+            <div class="uncover_place">uncover place</div>
+            <h2>popular destination</h2>
+            <p class="statement1"> 
+                Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, 
+                rutrum. Vestibulum cumque laudantium. Sit ornare mollitia tenetur, aptent.
+            </p>
+        </div>
         <div class="imgcountries">
-            <div class="photo">
+            <a class="photo" href="italy.html">
                 <img src="assets\Italy.jpg" alt="Italy">
                 <div class="name">
                     <p class="italy">italy</p>
                     <p class="place">san miguel</p>
-                    <p class="statement">It seems to me that some of these people want to spread the word.</p>
+                    <p class="statement2">Fusce hic augue velit wisi ips quibusdam pariatur, iusto.</p>
+                    <p class="review">
+                        <i class="bi bi-star-fill" id="stars"></i>
+                        <i class="bi bi-star-fill" id="stars"></i>
+                        <i class="bi bi-star-fill" id="stars"></i>
+                        <i class="bi bi-star-fill" id="stars"></i>
+                        <i class="bi bi-star-fill" id="stars"></i>
+                    </p>
                 </div> 
-            </div>
-            <div class="photo">
+            </a>
+            <a class="photo" href="dubai.html">
                 <img src="assets\Dubai.jpg" alt="Dubai"> 
                 <div class="name">
                     <p class="dubai">dubai</p>
                     <p class="place">burj khalifa</p>
-                    <p class="statement">It seems to me that some of these people want to spread the word.</p>
+                    <p class="statement2">Fusce hic augue velit wisi ips quibusdam pariatur, iusto.</p>
+                    <p class="review">
+                        <i class="bi bi-star-fill" id="stars"></i>
+                        <i class="bi bi-star-fill" id="stars"></i>
+                        <i class="bi bi-star-fill" id="stars"></i>
+                        <i class="bi bi-star-fill" id="stars"></i>
+                        <i class="bi bi-star-fill" id="stars"></i>
+                    </p>
                 </div> 
-            </div>
-            <div class="photo">
+            </a>
+            <a class="photo" href="jaban.html">
                 <img src="assets\Japan.jpg" alt="Japan">
                 <div class="name">
                     <p class="japan">japan</p>
                     <p class="place">kyoto temple</p>
-                    <p class="statement">It seems to me that some of these people want to spread the word.</p>
+                    <p class="statement2">Fusce hic augue velit wisi ips quibusdam pariatur, iusto.</p>
+                    <p class="review">
+                        <i class="bi bi-star-fill" id="stars"></i>
+                        <i class="bi bi-star-fill" id="stars"></i>
+                        <i class="bi bi-star-fill" id="stars"></i>
+                        <i class="bi bi-star-fill" id="stars"></i>
+                        <i class="bi bi-star-fill" id="stars"></i>
+                    </p>
                 </div>   
-            </div> 
+            </a> 
+        </div>
+        <div class="more_destination">
+            more destination
         </div>
     </section>
         
     <section id="package" >
-        <div  class="package-heading" >
+        <div class="package-heading" >
             <p class="head1" > popular packages</p>
             <h2 class="head2"> checkout our packages</h2>
-
             <p class="head3"> 
-                Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, 
-                rutrum. Vestibulum cumque laudantium. Sit ornare mollitia tenetur, aptent.
+                Travel unveils new cultures, ignites passions, and crafts memories.
+                Explore the world, enrich your soul, and embrace life's transformative odyssey
             </p>
         </div>
 
 
         <div class="package-cards">
-
             <div class="package-card1">
-
                 <div class="package-image">
                 </div>
-            
-                <div class="package-contains"  >
+                <div class="package-contains">
                     <div class="package-paragraph">
-                    <span class="package-title" > Experience The Great Holiday On Beach </span>
-
-                        Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, 
-                        est aliquet porttitor! Eaque, cras, aspernatur.
+                        <span class="package-title" > Experience The Great Holiday On Beach </span>
+                        Journey to explore, experience, and create lasting memories,
+                        enriching life's tapestry with adventures
                         <i class="fas fa-location-dot"></i>
                     </div>
                     <div class="meta">
-                        
                         <i class="bi bi-clock-fill" id ="time"></i>
                         <p class="time"> 7D/6N</p>
-
+                        <span class="line-vertical"> | </span>
                         <i class="bi bi-people-fill" id="people"></i>
                         <p class="people"> pax:10</p>
-
-
+                        <span class="line-vertical"> | </span>
                         <i class="bi bi-geo-alt-fill" id="map"></i>
                         <p class="map"> Malaysia</p>
-                        
                     </div>
                 </div>
-                
                 <div class="package-details">
                     <p class="rating">
-                    <span class="reviews"> (20 reviews)    </span>
+                        <span class="reviews"> (20 reviews)    </span>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
                         <i class="bi bi-star-fill"></i>
@@ -173,44 +194,32 @@
                     </p>
                     <p class="price"> 
                         <span class="dollar">$750 </span>  
-                        <br>
-                        / per person
+                        <br> / per person
                     </p>
-
                     <button class="book-now">
                         book now
                     </button>
                 </div>
-
             </div>
-
-
-
-
             <div class="package-card2">
-                
                 <div class="package-image">
                 </div>
-
-
-                <div class="package-contains"  >
-
+                <div class="package-contains">
                     <div class="package-paragraph">
-                    <span class="package-title" > summer holiday to the oxolotan river </span>
-                        Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, 
-                        est aliquet porttitor! Eaque, cras, aspernatur.
+                        <span class="package-title" > summer holiday to the oxolotan river </span>
+                        Journey to explore, experience, and create lasting memories,
+                        enriching life's tapestry with adventures
                         <i class="fas fa-location-dot"></i>
                     </div>
-
                     <div class="meta">
                         <i class="bi bi-clock-fill" id ="time"></i>
                         <p class="time"> 7D/6N</p>
-
+                        <span class="line-vertical"> | </span>
                         <i class="bi bi-people-fill" id="people"></i>
                         <p class="people"> pax:10</p>
-
+                        <span class="line-vertical"> | </span>
                         <i class="bi bi-geo-alt-fill" id="map"></i>
-                        <p class="map"> Malaysia</p>   
+                        <p class="map"> Malaysia</p>
                     </div>
                 </div>
                 <div class="package-details">
@@ -224,46 +233,32 @@
                     </p>
                     <p class="price"> 
                         <span class="dollar">$520 </span> 
-                        <br> 
-                        / per person
+                        <br> / per person
                     </p>
-
                     <button class="book-now">
                         book now
                     </button>
                 </div>
-
             </div>
-
-
-
-
             <div class="package-card3">
-                
                 <div class="package-image">
-                 
                 </div>
-
                 <div class="package-contains"  >
                     <div class="package-paragraph">
-                    <span class="package-title" > Santorini Island's Weekend Vacation </span>
-
-                        Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, 
-                        est aliquet porttitor! Eaque, cras, aspernatur.
+                        <span class="package-title" > Santorini Island's Weekend Vacation </span>
+                        Journey to explore, experience, and create lasting memories,
+                        enriching life's tapestry with adventures
                         <i class="fas fa-location-dot"></i>
                     </div>
                     <div class="meta">
-                        
                         <i class="bi bi-clock-fill" id ="time"></i>
                         <p class="time"> 7D/6N</p>
-
+                        <span class="line-vertical"> | </span>
                         <i class="bi bi-people-fill" id="people"></i>
                         <p class="people"> pax:10</p>
-
-
+                        <span class="line-vertical"> | </span>
                         <i class="bi bi-geo-alt-fill" id="map"></i>
                         <p class="map"> Malaysia</p>
-                        
                     </div>
                 </div>
                 <div class="package-details">
@@ -277,28 +272,20 @@
                     </p>
                     <p class="price"> 
                         <span class="dollar">$660 </span>
-                        <br>  
-                        / per person
+                        <br> / per person
                     </p>
-
                     <button class="book-now">
                         book now
                     </button>
                 </div>
             </div>
-
-
         </div>
 
 
         <div class="view-all-packages">
-            
-                view all packages
-       
+            view all packages
         </div>
-
     </section>
-
 
 </div>
 
