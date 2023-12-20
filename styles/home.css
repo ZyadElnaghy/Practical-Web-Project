@@ -227,6 +227,8 @@ button:hover {
 @media (max-width: 1200px) {
     .searchForm {
         grid-template-columns: repeat(4,1fr);
+        width: auto;
+        padding: 0 30px;
     }
     .searchForm button {
         grid-column: 1 / -1;
