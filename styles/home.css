@@ -591,7 +591,7 @@ footer .upper-footer {
 }
 
 footer .upper-footer .container {
-    max-width: 1180px;
+    max-width: 1400px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -654,14 +654,14 @@ footer .mid-footer {
 
 footer .mid-footer .container {
     margin: 20px auto;
-    max-width: 1180px;
+    max-width: 100%;
     display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: repeat(3, 1fr);
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
 
 footer .mid-footer .container > div {
-    margin: 50px;
+    margin: 0 50px;
 }
 
 footer .mid-footer .container .footer-brand p {
@@ -859,8 +859,25 @@ footer .lower-footer ul li:not(:last-child)::after {
     background-color: rgba(255, 255, 255, .3);
 }
 
-/* [3] Start Lower-Footer */
+/* [3] End Lower-Footer */
 
+@media screen and (max-width: 1199px) {
+    .footer-form {
+        grid-column: span 2;
+    }
+    .upper-footer .container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 814px) {
+    .footer-form {
+        grid-column: span 1;
+    }
+    footer .lower-footer {
+        flex-direction: column;
+    }
+}
 
 /* End Footer */
 
