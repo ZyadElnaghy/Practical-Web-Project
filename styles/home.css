@@ -595,7 +595,7 @@ footer .upper-footer {
 }
 
 footer .upper-footer .container {
-    max-width: 1400px;
+    max-width: var(--width);
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -658,7 +658,7 @@ footer .mid-footer {
 
 footer .mid-footer .container {
     margin: 20px auto;
-    max-width: 100%;
+    width: var(--width);
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
