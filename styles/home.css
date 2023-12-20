@@ -563,6 +563,7 @@ button:hover {
     margin-top: 25px;
     margin-bottom: 50px;
     border-radius: 50px;
+    width: 200px;
 }
 
 .more_destination:hover{
