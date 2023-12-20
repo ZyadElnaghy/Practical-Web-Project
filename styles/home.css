@@ -11,6 +11,7 @@
     --secondary-color: #ffffff;
     --subtitles: #595852;
     --titles:black;
+    --width: 1200px;
 }
 
 body , html {
@@ -81,7 +82,7 @@ nav ul li a:hover {
     background-position: center;
     background-color: hsla(0, 0%, 0%, 0.7);
     background-blend-mode: overlay;
-    height: 800px;
+    height: 105vh;
 }
 
 
@@ -173,7 +174,7 @@ nav ul li a:hover {
 }
 .searchForm{
     display: grid;
-    width: 90%;
+    width: var(--width);
     margin:  auto;
     gap: 10px;
     grid-template-columns: repeat(5,1fr);
