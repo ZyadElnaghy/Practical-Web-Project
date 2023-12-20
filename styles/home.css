@@ -11,7 +11,6 @@
     --secondary-color: #ffffff;
     --subtitles: #595852;
     --titles:black;
-    --width: 1100px;
 }
 
 body , html {
@@ -82,7 +81,7 @@ nav ul li a:hover {
     background-position: center;
     background-color: hsla(0, 0%, 0%, 0.7);
     background-blend-mode: overlay;
-    height: 105vh;
+    height: 800px;
 }
 
 
@@ -174,7 +173,7 @@ nav ul li a:hover {
 }
 .searchForm{
     display: grid;
-    width: var(--width);
+    width: 90%;
     margin:  auto;
     gap: 10px;
     grid-template-columns: repeat(5,1fr);
@@ -227,8 +226,6 @@ button:hover {
 @media (max-width: 1200px) {
     .searchForm {
         grid-template-columns: repeat(4,1fr);
-        width: auto;
-        padding: 0 30px;
     }
     .searchForm button {
         grid-column: 1 / -1;
@@ -253,6 +250,38 @@ button:hover {
     padding-top: 90px;
 }
 
+.package-heading{
+    text-align: center;
+    width: 900px;
+    margin: 0px auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.head3{
+    color: hsl(225, 8%, 42%);
+    width: 550px;
+    margin: auto;
+}
+
+.head1{
+    color: hsl(214, 57%, 51%);
+}
+
+.head1 , 
+.head2{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.head2{
+    font-weight: 800;
+    font-size: calc(18px + 1.6vw);
+    color: hsl(206, 34%, 20%);
+}
+
+
+
 .package-card1 {
     background-image: url(../assets/package-card1.jpg);
 }
@@ -263,33 +292,48 @@ button:hover {
     background-image: url(../assets/package-card3.jpg);
 }
 
+.package{
+    width: 1200px;
+   
+}
 
 .package-card1,
 .package-card2,
 .package-card3{
-    width: var(--width);
+
     border-radius: 15px ;
     height : 300px;
-    background-repeat: no-repeat;
-    background-size: 330px 300px;
     display: grid;
-    grid-template-columns: 330px auto 250px;
+    background-repeat: no-repeat;
+    background-size: calc(100% /3) 300px;
+    grid-template-columns: calc(100% /3) calc(100% /3) calc(100% /3);
     background-color: hsl(214, 56%, 58%);
-    margin: 30px auto 0px auto;
-    line-height: 1.4;
+    margin: 30px auto ;
+    line-height: 1.6;
+    transition: 0.6s ease-in-out;
+    
+
+
+}
+
+
+.package-card1:hover,
+.package-card2:hover,
+.package-card3:hover{
+    transform: scale(1.008);
+    cursor: pointer;
 }
 
 .package-contains{
-    padding-left:30px;
-    padding-top: 25px;
+    height: 300px;
+    padding: 30px 10px 10px 30px;
     background-color: hsl(0, 0%, 98%);
     color: hsl(225, 8%, 42%);
     font-size: 15px;
     font-family: "Montserrat", sans-serif;
     display: grid;
     grid-template-rows: auto 300px;
-
-    max-height: 300px;
+    max-height: 1fr;
 }
 
 .package-title{
@@ -315,12 +359,13 @@ button:hover {
     display: block;
     width: 300px;
     height: 50px;
-    margin: 25px ;
+    margin-top: 20px;
+
     border-radius: 25px;
     box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.15);
-   
 }
 
+/* icons */
 #time ,
 #people,
 #map{
@@ -328,47 +373,9 @@ button:hover {
 }
 
 .meta .time ,
-.meta .people {
-    border-right: solid hsl(206, 34%, 20%) 1.5px;
-    padding-right:10px;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-
-
-
-
-/* headings */
-
-.package-heading{
-   text-align: center;
-   width: 900px;
-   margin: 0px auto;
-   font-family: "Montserrat", sans-serif;
-}
-
-
-.head3{
-   color: hsl(225, 8%, 42%);
-   width: 550px;
-   margin: auto;
-}
-
-.head1{
-    color: hsl(214, 57%, 51%);
-}
-
-.head1 , 
-.head2{
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-
-.head2{
-    font-weight: 800;
-    font-size: calc(18px + 1.6vw);
-    color: hsl(206, 34%, 20%);
-  
+.meta .people ,
+.meta .map{
+    margin: 4% 5px;
 }
 
 
@@ -378,6 +385,7 @@ button:hover {
 
 .package-details{
     color: white;
+    margin: 0 auto ;
     font-family: "Montserrat", sans-serif;
     font-size: 15px;;
 }
@@ -387,7 +395,7 @@ button:hover {
 }
 
 .rating{
-    width : 250px;
+    width : 350px;
     text-align: center;
     margin: 50px auto;
 }
@@ -396,7 +404,7 @@ button:hover {
 
 
 .price{
-    width: 250px;
+    /* width: 350px; */
     text-align: center;
     line-height: 20px;;
     font-size: 12px;;
@@ -404,15 +412,14 @@ button:hover {
 .dollar{
     font-size: calc(18px + 1.6vw);
     font-weight: 800;
-    margin-right: 0px;
+
 }
 
 
 .book-now{
     width:150px;
     height:50px;
-    margin: 50px;
-    margin-top: 10px;
+    margin: 20px 100px;
     border-radius: 100px;
     color: white;
     background-color: hsl(214, 56%, 58%);
@@ -421,33 +428,94 @@ button:hover {
     border: solid white 1px;
     transition: 0.25s ease-in-out;
 }
-
+.line-vertical{
+    display: inline-block;
+    margin: 5px;
+}
 .book-now:hover{
     background-color: hsla(0, 0%, 100%, 0.1);
     cursor: pointer;
+    color: white;
 }
 
 
 
 .view-all-packages{
+    width: 200px;
+    height:50px;
     color:white;
     text-align: center;
     background-color: hsl(214, 57%, 51%);
     transition: 0.25s ease-in-out;
     text-transform: uppercase;
-    padding-top: 17px;
-    padding-bottom: 17px;
-    margin-left: 538px;
-    margin-right: 538px;
-    margin-top: 50px;
-    margin-bottom: 140px;
+
+    margin: auto;
+    padding-top:15px;
     border-radius: 54px;
+    margin-bottom: 50px;
 }
 
 .view-all-packages:hover{
     background-color:hsl(214, 72%, 33%);
     cursor: pointer;
 }
+
+
+@media (max-width: 768px){
+
+    .package-card1,
+    .package-card2,
+    .package-card3{
+        max-width: 768px;
+        width: 100%;
+        height: auto;
+        margin: 100px auto;
+        grid-template-columns: 1fr;
+        background-size: 100% 300px;
+     
+    }
+
+    .package-contains , 
+    .package-details , 
+    .package-image{
+        height: 300px;
+        width: 100%;
+        max-width: 768px;
+        gap: 20px;
+    }
+
+    .book-now{
+        margin: 20px 310px;
+    }
+    
+} 
+
+@media (max-width: 480px) {
+    .package-card1,
+    .package-card2,
+    .package-card3{
+        max-width: 480px;
+        width: 100%;
+        height: auto;
+        margin: 100px auto;
+        grid-template-columns: 1fr;
+        background-size: 100% 300px;
+    }
+
+    .package-contains , 
+    .package-details , 
+    .package-image{
+        height: 300px;
+        width: 100%;
+        max-width: 480px;
+        gap: 20px;
+    }
+
+    .book-now{
+        margin: 20px 170px;
+    }
+} 
+
 
 .destinations{
     padding-bottom: 50px;
@@ -496,7 +564,6 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(3,auto);
     column-gap: 30px;
-    width: var(--width);
 }
 
 .name{
@@ -563,7 +630,6 @@ button:hover {
     margin-top: 25px;
     margin-bottom: 50px;
     border-radius: 50px;
-    width: 200px;
 }
 
 .more_destination:hover{
@@ -672,7 +738,7 @@ footer .mid-footer .container {
 }
 
 footer .mid-footer .container > div {
-    margin: 0 50px;
+    margin: 50px;
 }
 
 footer .mid-footer .container .footer-brand p {
@@ -870,7 +936,7 @@ footer .lower-footer ul li:not(:last-child)::after {
     background-color: rgba(255, 255, 255, .3);
 }
 
-/* [3] End Lower-Footer */
+/* [3] Start Lower-Footer */
 
 @media screen and (max-width: 1065px) {
     .footer-form {
