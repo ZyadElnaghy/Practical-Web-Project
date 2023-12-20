@@ -11,7 +11,7 @@
     --secondary-color: #ffffff;
     --subtitles: #595852;
     --titles:black;
-    --width: 1200px;
+    --width: 1100px;
 }
 
 body , html {
@@ -563,6 +563,7 @@ button:hover {
     margin-top: 25px;
     margin-bottom: 50px;
     border-radius: 50px;
+    width: 200px;
 }
 
 .more_destination:hover{
