@@ -221,7 +221,7 @@
 
 @media only screen and (max-width: 800px) {
   .about img {
-    margin-top: 20px;
+    margin-top: 230px;
     width: 300px;
     border-radius: 100px;
   }
@@ -288,5 +288,21 @@
 
   .social a {
     margin: 0 10px;
+  }
+
+  /* navbar */
+
+  .navbar li {
+    float: none;
+    margin-right: 0;
+  }
+
+  .navbar li a {
+    display: block;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    margin: 0;
   }
 }
