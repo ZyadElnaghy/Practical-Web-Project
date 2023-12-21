@@ -21,7 +21,8 @@ body , html {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    width: 1300px;
+    /* width: 100%; */
+    max-width: 1200px;;
     margin: 0 auto;
 }
 header {
@@ -252,7 +253,7 @@ button:hover {
 
 .package-heading{
     text-align: center;
-    width: 900px;
+    width: 80%;
     margin: 0px auto;
     font-family: "Montserrat", sans-serif;
 }
@@ -260,7 +261,7 @@ button:hover {
 
 .head3{
     color: hsl(225, 8%, 42%);
-    width: 550px;
+    width: 80%;
     margin: auto;
 }
 
@@ -276,7 +277,7 @@ button:hover {
 
 .head2{
     font-weight: 800;
-    font-size: calc(18px + 1.6vw);
+    font-size: 40px;
     color: hsl(206, 34%, 20%);
 }
 
@@ -293,17 +294,19 @@ button:hover {
 }
 
 .package{
-    width: 1200px;
-   
+    width: 90%;
+  
+
 }
 
 .package-card1,
 .package-card2,
 .package-card3{
-
+    max-width: 1200px;;
     border-radius: 15px ;
     height : 300px;
     display: grid;
+    /* margin: auto auto; */
     background-repeat: no-repeat;
     background-size: calc(100% /3) 300px;
     grid-template-columns: calc(100% /3) calc(100% /3) calc(100% /3);
@@ -311,10 +314,8 @@ button:hover {
     margin: 30px auto ;
     line-height: 1.6;
     transition: 0.6s ease-in-out;
-    
 
-
-}
+}   
 
 
 .package-card1:hover,
@@ -326,24 +327,24 @@ button:hover {
 
 .package-contains{
     height: 300px;
-    padding: 30px 10px 10px 30px;
+    padding: 3% 3% ;
     background-color: hsl(0, 0%, 98%);
     color: hsl(225, 8%, 42%);
     font-size: 15px;
     font-family: "Montserrat", sans-serif;
     display: grid;
-    grid-template-rows: auto 300px;
-    max-height: 1fr;
+    grid-template-rows: auto auto;
+    max-height: 300px;
+   
 }
 
 .package-title{
     display:block;
-    margin-bottom: 10px;
-    line-height: 1.4;
+    margin-bottom: .1%;
     text-transform: uppercase;
     font-weight: 700;
     color: hsl(206, 34%, 20%);
-    font-size: 30px;
+    font-size: 20px;
 } 
 
 
@@ -356,11 +357,12 @@ button:hover {
 .meta{
     background-color:rgb(255, 255, 255);
     text-align: center;
-    display: block;
-    width: 300px;
+    width: 80%;
+    max-width: 100%;
     height: 50px;
-    margin-top: 20px;
-
+    max-height: 70px;;
+    padding-top: .5%;
+    margin: 1% auto;
     border-radius: 25px;
     box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.15);
 }
@@ -375,7 +377,7 @@ button:hover {
 .meta .time ,
 .meta .people ,
 .meta .map{
-    margin: 4% 5px;
+    margin: 1% 1%;
 }
 
 
@@ -385,7 +387,9 @@ button:hover {
 
 .package-details{
     color: white;
-    margin: 0 auto ;
+    width:100%;
+    max-width: 100%;
+    margin: 1% auto ;
     font-family: "Montserrat", sans-serif;
     font-size: 15px;;
 }
@@ -395,7 +399,6 @@ button:hover {
 }
 
 .rating{
-    width : 350px;
     text-align: center;
     margin: 50px auto;
 }
@@ -404,7 +407,6 @@ button:hover {
 
 
 .price{
-    /* width: 350px; */
     text-align: center;
     line-height: 20px;;
     font-size: 12px;;
@@ -417,9 +419,9 @@ button:hover {
 
 
 .book-now{
-    width:150px;
+    width:45%;
     height:50px;
-    margin: 20px 100px;
+    margin: 3% calc( (100% - 45% )/  2);
     border-radius: 100px;
     color: white;
     background-color: hsl(214, 56%, 58%);
@@ -430,7 +432,7 @@ button:hover {
 }
 .line-vertical{
     display: inline-block;
-    margin: 5px;
+    margin: 1%;
 }
 .book-now:hover{
     background-color: hsla(0, 0%, 100%, 0.1);
@@ -466,12 +468,13 @@ button:hover {
     .package-card1,
     .package-card2,
     .package-card3{
-        max-width: 768px;
+        max-width: 100%;
         width: 100%;
         height: auto;
         margin: 100px auto;
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         background-size: 100% 300px;
+
      
     }
 
@@ -480,12 +483,13 @@ button:hover {
     .package-image{
         height: 300px;
         width: 100%;
-        max-width: 768px;
+        max-width: 100%;
         gap: 20px;
     }
 
     .book-now{
-        margin: 20px 310px;
+        width: 45%;
+        margin: 20px calc( (100%-45%)/2);
     }
     
 } 
@@ -494,12 +498,14 @@ button:hover {
     .package-card1,
     .package-card2,
     .package-card3{
-        max-width: 480px;
+        max-width: 100%;
         width: 100%;
         height: auto;
         margin: 100px auto;
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
         background-size: 100% 300px;
+
+     
     }
 
     .package-contains , 
@@ -507,13 +513,15 @@ button:hover {
     .package-image{
         height: 300px;
         width: 100%;
-        max-width: 480px;
+        max-width: 100%;
         gap: 20px;
     }
 
     .book-now{
-        margin: 20px 170px;
+        width: 45%;
+        margin: 20px calc( (100%-45%)/2);
     }
+    
 } 
 
 
