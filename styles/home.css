@@ -11,6 +11,7 @@
     --secondary-color: #ffffff;
     --subtitles: #595852;
     --titles:black;
+    --width: 1200px;
 }
 
 body , html {
