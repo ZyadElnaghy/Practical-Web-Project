@@ -587,6 +587,7 @@ button:hover {
 .imgcountries .container a{
     margin: 10px 5px;
     width: 350px;
+    transition: 0.3s ease-in-out;
 }
 
 .imgcountries .photo{
@@ -773,6 +774,11 @@ footer .upper-footer p {
     /* font-size: 1.2rem; */
     margin-bottom: 10px;
     width: 85%;
+}
+@media (max-width: 800px) {
+    footer .upper-footer p {
+        width: unset;
+    }
 }
 
 footer .upper-footer p:first-of-type {
