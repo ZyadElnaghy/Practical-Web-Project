@@ -774,6 +774,11 @@ footer .upper-footer p {
     margin-bottom: 10px;
     width: 85%;
 }
+@media (max-width: 800px) {
+    footer .upper-footer p {
+        width: unset;
+    }
+}
 
 footer .upper-footer p:first-of-type {
     text-transform: uppercase;
