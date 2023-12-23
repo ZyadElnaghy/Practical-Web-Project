@@ -587,6 +587,7 @@ button:hover {
 .imgcountries .container a{
     margin: 10px 5px;
     width: 350px;
+    transition: 0.3s ease-in-out;
 }
 
 .imgcountries .photo{
