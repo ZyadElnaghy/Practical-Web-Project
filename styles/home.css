@@ -184,7 +184,6 @@ nav ul li a:hover {
 .searchForm div {
     margin: 0 auto;
     width: 100%;
-    
 }
 
 .searchForm div:nth-child(3) input , .searchForm div:nth-child(4) input {
@@ -295,14 +294,12 @@ button:hover {
 
 .package{
     width: 90%;
-  
-
 }
 
 .package-card1,
 .package-card2,
 .package-card3{
-    max-width: 1200px;;
+    max-width: var(--width);
     border-radius: 15px ;
     height : 300px;
     display: grid;
@@ -354,17 +351,26 @@ button:hover {
     display:inline-block;
 
 }
+
 .meta{
-    background-color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:var(--secondary-color);
     text-align: center;
     width: 80%;
     max-width: 100%;
     height: 50px;
-    max-height: 70px;;
+    max-height: max-content;
     padding-top: .5%;
     margin: 1% auto;
     border-radius: 25px;
     box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.15);
+}
+.meta li {
+    list-style-type: none;
+    display: contents;
 }
 
 /* icons */
@@ -468,24 +474,25 @@ button:hover {
     .package-card1,
     .package-card2,
     .package-card3{
-        max-width: 80%;
+        max-width: 100%;
         width: 100%;
         height: auto;
         margin: 50px auto;
         grid-template-columns: 100%;
         background-size: 100% 300px;
-
-     
     }
 
     .package-contains , 
-    .package-details , 
-    .package-image{
+    .package-details{
         height: 300px;
         width: 100%;
         max-width: 100%;
-        gap: 20px;
     }
+    .package-image {
+        height: 250px;
+        object-fit: cover;
+    }
+    
 
     .book-now{
         width: 45%;
@@ -498,33 +505,33 @@ button:hover {
     .package-card1,
     .package-card2,
     .package-card3{
-        max-width: 80%;
+        max-width: 100%;
         width: 100%;
         height: auto;
         margin: 50px auto;
         grid-template-columns: 100%;
         background-size: 100% 300px;
-
-     
     }
 
     .package-contains , 
     .package-details , 
     .package-image{
-        height: 300px;
+        height: 250px;
         width: 100%;
         max-width: 100%;
-        gap: 20px;
+    }
+    .package-image {
+        height: 250px;
+        object-fit: cover;
     }
 
     .book-now{
         width: 45%;
         margin: 20px calc( (100%-45%)/2);
     }
-    
 } 
 
-
+/* reposive destinations */
 @media (min-width: 481px) and (max-width: 768px) {
     .destinations{
         padding-bottom: 50px;
