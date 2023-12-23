@@ -1,271 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/home.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
-    />
-    <title>Travelago</title>
-    <script>
-      function nv() {
-        var navbar = document.getElementById("navbar");
-        var scrollvalue = window.scrollY;
-        if (scrollvalue < 83) {
-          navbar.classList.remove("new-nav");
-        } else {
-          navbar.classList.add("new-nav");
-        }
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/home.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+  <title>Travelago</title>
+  <script>
+    function nv() {
+      var navbar = document.getElementById("navbar");
+      var scrollvalue = window.scrollY;
+      if (scrollvalue < 83) {
+        navbar.classList.remove("new-nav");
+      } else {
+        navbar.classList.add("new-nav");
       }
-      window.addEventListener("scroll", nv);
-    </script>
-  </head>
-  <body>
-    <p id="home"></p>
+    }
+    window.addEventListener("scroll", nv);
+  </script>
+</head>
 
-    <section class="Main">
-      <header>
-        <img src="assets/logo.svg" alt="logo" />
-      </header>
-      <div class="fixed">
-        <nav id="navbar">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#Destination">Destination</a></li>
-            <li><a href="#package">Packages</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="About_Us.html">Contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
+<body>
+  <p id="home"></p>
 
-      <div class="title">
-        <h2>Journey to explore world</h2>
-        <p>
-          Embark on a transformative journey of self-discovery and cultural
-          exploration, as you traverse the landscapes of our planet,
-          encountering the rich tapestry of traditions, breathtaking landscapes.
+  <section class="Main">
+    <header>
+      <img src="assets/logo.svg" alt="logo" />
+    </header>
+    <div class="fixed">
+      <nav id="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#Destination">Destination</a></li>
+          <li><a href="#package">Packages</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="About_Us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="title">
+      <h2>Journey to explore world</h2>
+      <p>
+        Embark on a transformative journey of self-discovery and cultural
+        exploration, as you traverse the landscapes of our planet,
+        encountering the rich tapestry of traditions, breathtaking landscapes.
+      </p>
+    </div>
+    <div class="buttons-group">
+      <a href="#" class="book-button">Book Now</a>
+      <a href="#" class="learn-button">learn more</a>
+    </div>
+  </section>
+
+  <section class="search-section">
+    <div class="page">
+      <form action="" class="searchForm">
+        <div>
+          <label for="destination"> search Destination *</label>
+          <input type="text" name="destination" id="destination" placeholder="Enter Destination" required />
+        </div>
+
+        <div>
+          <label for="max-num"> Max Number of People *</label>
+          <input type="number" name="max-num" id="max-num" placeholder="Enter Number of People" required />
+        </div>
+
+        <div>
+          <label for="check-in"> Check-in Date *</label>
+          <input type="date" name="check-in" id="check-in" placeholder="Enter Check-in Date" required />
+        </div>
+
+        <div>
+          <label for="check-out"> Check-out Date *</label>
+          <input type="date" name="check-out" id="check-out" placeholder="Enter Check-out Date" required />
+        </div>
+
+        <button type="submit" class="submit">INQUIRE NOW</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="destinations">
+    <div class="page" id="Destination">
+      <div class="three_heads">
+        <div class="uncover_place">uncover place</div>
+        <h2>popular destination</h2>
+        <p class="statement1">
+          Travel unveils new cultures, ignites passions, and crafts memories.
+          Explore the world, enrich your soul, and embrace life's
+          transformative odyssey.
         </p>
       </div>
-      <div class="buttons-group">
-        <a href="#" class="book-button">Book Now</a>
-        <a href="#" class="learn-button">learn more</a>
-      </div>
-    </section>
-
-    <section class="search-section">
-      <div class="page">
-        <form action="" class="searchForm">
-          <div>
-            <label for="destination"> search Destination *</label>
-            <input
-              type="text"
-              name="destination"
-              id="destination"
-              placeholder="Enter Destination"
-              required
-            />
-          </div>
-
-          <div>
-            <label for="max-num"> Max Number of People *</label>
-            <input
-              type="number"
-              name="max-num"
-              id="max-num"
-              placeholder="Enter Number of People"
-              required
-            />
-          </div>
-
-          <div>
-            <label for="check-in"> Check-in Date *</label>
-            <input
-              type="date"
-              name="check-in"
-              id="check-in"
-              placeholder="Enter Check-in Date"
-              required
-            />
-          </div>
-
-          <div>
-            <label for="check-out"> Check-out Date *</label>
-            <input
-              type="date"
-              name="check-out"
-              id="check-out"
-              placeholder="Enter Check-out Date"
-              required
-            />
-          </div>
-          
-          <button type="submit" class="submit">INQUIRE NOW</button>
-        </form>
-    </div>
-</section>
-
-<section class="destinations">
-          <div class="page" id="Destination">
-          <div class="three_heads">
-              <div class="uncover_place">uncover place</div>
-              <h2>popular destination</h2>
-              <p class="statement1">
-                  Travel unveils new cultures, ignites passions, and crafts memories.
-                  Explore the world, enrich your soul, and embrace life's
-                  transformative odyssey.
+      <div class="imgcountries">
+        <div class="container">
+          <a class="photo" href="italy.html">
+            <img src="assets\Italy.jpg" alt="Italy" />
+            <div class="name">
+              <div class="cont">
+                <p class="italy">italy</p>
+                <p class="place">san miguel</p>
+                <p class="statement2">
+                  Journey to explore, experience, and create lasting memories.
                 </p>
+                <p class="review">
+                  <i class="bi bi-star-fill" id="stars"></i>
+                  <i class="bi bi-star-fill" id="stars"></i>
+                  <i class="bi bi-star-fill" id="stars"></i>
+                  <i class="bi bi-star-fill" id="stars"></i>
+                  <i class="bi bi-star-fill" id="stars"></i>
+                </p>
+              </div>
+
             </div>
-            <div class="imgcountries">
-                <a class="photo" href="italy.html">
-                    <img src="assets\Italy.jpg" alt="Italy" />
-                    <div class="name">
-                        <p class="italy">italy</p>
-                        <p class="place">san miguel</p>
-                        <p class="statement2">
-                            Journey to explore, experience, and create lasting memories.
-                        </p>
-                        <p class="review">
-                            <i class="bi bi-star-fill" id="stars"></i>
-                            <i class="bi bi-star-fill" id="stars"></i>
-                            <i class="bi bi-star-fill" id="stars"></i>
-                            <i class="bi bi-star-fill" id="stars"></i>
-                            <i class="bi bi-star-fill" id="stars"></i>
-                        </p>
-                    </div>
+
           </a>
           <a class="photo" href="dubai.html">
             <img src="assets\Dubai.jpg" alt="Dubai" />
             <div class="name">
+              <div class="cont">
+
                 <p class="dubai">dubai</p>
                 <p class="place">burj khalifa</p>
                 <p class="statement2">
-                    Journey to explore, experience, and create lasting memories.
-                </p>
-                <p class="review">
-                    <i class="bi bi-star-fill" id="stars"></i>
-                    <i class="bi bi-star-fill" id="stars"></i>
-                    <i class="bi bi-star-fill" id="stars"></i>
-                    <i class="bi bi-star-fill" id="stars"></i>
-                    <i class="bi bi-star-fill" id="stars"></i>
-                </p>
-            </div>
-        </a>
-        <a class="photo" href="jaban.html">
-            <img src="assets\Japan.jpg" alt="Japan" />
-            <div class="name">
-              <p class="japan">japan</p>
-              <p class="place">kyoto temple</p>
-              <p class="statement2">
                   Journey to explore, experience, and create lasting memories.
                 </p>
                 <p class="review">
-                    <i class="bi bi-star-fill" id="stars"></i>
-                    <i class="bi bi-star-fill" id="stars"></i>
-                    <i class="bi bi-star-fill" id="stars"></i>
-                    <i class="bi bi-star-fill" id="stars"></i>
-                    <i class="bi bi-star-fill" id="stars"></i>
+                  <i class="bi bi-star-fill" id="stars"></i>
+                  <i class="bi bi-star-fill" id="stars"></i>
+                  <i class="bi bi-star-fill" id="stars"></i>
+                  <i class="bi bi-star-fill" id="stars"></i>
+                  <i class="bi bi-star-fill" id="stars"></i>
                 </p>
-            </div>
-        </a>
-    </div>
-    <div class="more_destination">more destination</div>
-      </section>
-    </div>
-      
-      <section id="package">
-        <div class="page">
-            <div class="package-heading">
-                <p class="head1">popular packages</p>
-                <h2 class="head2">checkout our packages</h2>
-                <p class="head3">
-                Travel unveils new cultures, ignites passions, and crafts memories.
-                Explore the world, enrich your soul, and embrace life's
-                transformative odyssey
-            </p>
-        </div>
 
-        <div class="package-cards">
-          <div class="package-card1">
-            <div class="package-image"></div>
-            <div class="package-contains">
-              <div class="package-paragraph">
-                <span class="package-title">
-                  Experience The Great Holiday On Beach
-                </span>
-                Journey to explore, experience, and create lasting memories,
-                enriching life's tapestry with adventures
-                <i class="fas fa-location-dot"></i>
-            </div>
-              <div class="meta">
-                <i class="bi bi-clock-fill" id="time"></i>
-                <p class="time">7D/6N</p>
-                <span class="line-vertical"> | </span>
-                <i class="bi bi-people-fill" id="people"></i>
-                <p class="people">pax:10</p>
-                <span class="line-vertical"> | </span>
-                <i class="bi bi-geo-alt-fill" id="map"></i>
-                <p class="map">Malaysia</p>
               </div>
             </div>
-            <div class="package-details">
-              <p class="rating">
-                <span class="reviews"> (20 reviews) </span>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill" id="closed-star"></i>
-              </p>
-              <p class="price">
-                <span class="dollar">$750 </span>
-                <br />
-                / per person
-            </p>
-              <button class="book-now">book now</button>
+          </a>
+          <a class="photo" href="jaban.html">
+            <img src="assets\Japan.jpg" alt="Japan" />
+            <div class="name">
+              <div class="cont">
+                <p class="japan">japan</p>
+                <p class="place">kyoto temple</p>
+                <p class="statement2">
+                  Journey to explore, experience, and create lasting memories.
+                </p>
+                <p class="review">
+                  <i class="bi bi-star-fill" id="stars"></i>
+                  <i class="bi bi-star-fill" id="stars"></i>
+                  <i class="bi bi-star-fill" id="stars"></i>
+                  <i class="bi bi-star-fill" id="stars"></i>
+                  <i class="bi bi-star-fill" id="stars"></i>
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="more_destination">
+        <button>
+          More Distination
+        </button>
+      </div>
+  </section>
+  </div>
+
+  <section id="package">
+    <div class="page">
+
+      <div class="package-heading">
+        <p class="head1">popular packages</p>
+        <h2 class="head2">checkout our packages</h2>
+        <p class="head3">
+          Travel unveils new cultures, ignites passions, and crafts memories.
+          Explore the world, enrich your soul, and embrace life's
+          transformative odyssey
+        </p>
+      </div>
+
+      <div class="package-cards">
+        <div class="package-card1">
+          <div class="package-image"></div>
+          <div class="package-contains">
+            <div class="package-paragraph">
+              <span class="package-title">
+                Experience The Great Holiday On Beach
+              </span>
+              Journey to explore, experience, and create lasting memories,
+              enriching life's tapestry with adventures
+              <i class="fas fa-location-dot"></i>
+            </div>
+            <div class="meta">
+              <i class="bi bi-clock-fill" id="time"></i>
+              <p class="time">7D/6N</p>
+              <span class="line-vertical"> | </span>
+              <i class="bi bi-people-fill" id="people"></i>
+              <p class="people">pax:10</p>
+              <span class="line-vertical"> | </span>
+              <i class="bi bi-geo-alt-fill" id="map"></i>
+              <p class="map">Malaysia</p>
             </div>
           </div>
-          <div class="package-card2">
-            <div class="package-image"></div>
-            <div class="package-contains">
-              <div class="package-paragraph">
-                <span class="package-title">
-                  summer holiday to the oxolotan river
-                </span>
-                Journey to explore, experience, and create lasting memories,
-                enriching life's tapestry with adventures
-                <i class="fas fa-location-dot"></i>
-              </div>
-              <div class="meta">
-                  <i class="bi bi-clock-fill" id="time"></i>
-                <p class="time">7D/6N</p>
-                <span class="line-vertical"> | </span>
-                <i class="bi bi-people-fill" id="people"></i>
-                <p class="people">pax:10</p>
-                <span class="line-vertical"> | </span>
-                <i class="bi bi-geo-alt-fill" id="map"></i>
-                <p class="map">Malaysia</p>
-              </div>
-            </div>
-            <div class="package-details">
-              <p class="rating">
-                <span class="reviews"> (40 reviews) </span>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill" id="closed-star"></i>
+          <div class="package-details">
+            <p class="rating">
+              <span class="reviews"> (20 reviews) </span>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill" id="closed-star"></i>
             </p>
-              <p class="price">
-                <span class="dollar">$520 </span>
-                <br />
-                / per person
+            <p class="price">
+              <span class="dollar">$750 </span>
+              <br />
+              / per person
+            </p>
+            <button class="book-now">book now</button>
+          </div>
+        </div>
+        <div class="package-card2">
+          <div class="package-image"></div>
+          <div class="package-contains">
+            <div class="package-paragraph">
+              <span class="package-title">
+                summer holiday to the oxolotan river
+              </span>
+              Journey to explore, experience, and create lasting memories,
+              enriching life's tapestry with adventures
+              <i class="fas fa-location-dot"></i>
+            </div>
+            <div class="meta">
+              <i class="bi bi-clock-fill" id="time"></i>
+              <p class="time">7D/6N</p>
+              <span class="line-vertical"> | </span>
+              <i class="bi bi-people-fill" id="people"></i>
+              <p class="people">pax:10</p>
+              <span class="line-vertical"> | </span>
+              <i class="bi bi-geo-alt-fill" id="map"></i>
+              <p class="map">Malaysia</p>
+            </div>
+          </div>
+          <div class="package-details">
+            <p class="rating">
+              <span class="reviews"> (40 reviews) </span>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill" id="closed-star"></i>
+            </p>
+            <p class="price">
+              <span class="dollar">$520 </span>
+              <br />
+              / per person
             </p>
               <button class="book-now">book now</button>
             </div>
@@ -314,88 +303,83 @@
                 <i class="bi bi-star-fill" id="closed-star"></i>
             </p>
             <p class="price">
-                <span class="dollar">$660 </span>
-                <br />
-                / per person
+              <span class="dollar">$660 </span>
+              <br />
+              / per person
             </p>
             <button class="book-now">book now</button>
-        </div>
-          </div>
-        </div>
-        <div class="view-all-packages">view all packages</div>
-    </section>
-</div>
-    
-    <p id="about"></p>
-    <footer>
-      <div class="upper-footer">
-        <div class="container">
-          <div class="some-text">
-            <p>call to action</p>
-            <p>READY FOR UNFORGATABLE TRAVEL. REMEMBER US!</p>
-            <p>
-                Discover new horizons with us! Uncover hidden gems, embrace unique
-                cultures, and indulge in remarkable experiences. Our platform is
-                your key to extraordinary adventures, carefully tailored to ignite
-                your wanderlust.
-            </p>
-          </div>
-          <div class="contact-button">
-            <button>Contact Us!</button>
           </div>
         </div>
       </div>
-      <div class="mid-footer">
-        <div class="container">
-          <div class="footer-brand">
-            <img src="assets/logo.svg" alt="Logo" />
-            <p>
-              Discover new horizons with us! Uncover hidden gems, embrace unique
-              cultures, and indulge in remarkable experiences. Our platform is
-              your key to extraordinary adventures, carefully tailored to ignite
-              your wanderlust.
-            </p>
-          </div>
-          <div class="footer-contact">
-            <h4>Contact Us</h4>
-            <p>Feel free to contact and reach us !!</p>
-            <ul>
-              <li>
-                <a href="About_Us.html"
-                  ><i class="bx bx-phone"></i> <span></span> +12345678910</a
-                >
-              </li>
-              <li>
-                <a href="About_Us.html"
-                  ><i class="bx bxl-gmail"></i>
-                  <span></span> teamgamed@gmail.com</a
-                >
-              </li>
-              <li>
-                <a href="About_Us.html"
-                  ><i class="bx bx-home"></i> <span></span> FCI | Suez Canal
-                  University</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="footer-form">
-            <p>Subscribe our newsletter for more update & news !!</p>
-            <form action="">
-              <input type="email" placeholder="Enter Your Email.." required />
-              <button type="submit">subscribe</button>
-            </form>
-          </div>
+      <div class="view-all-packages">view all packages</div>
+  </section>
+  </div>
+
+  <p id="about"></p>
+  <footer>
+    <div class="upper-footer">
+      <div class="container">
+        <div class="some-text">
+          <p>call to action</p>
+          <p>READY FOR UNFORGATABLE TRAVEL. REMEMBER US!</p>
+          <p>
+            Discover new horizons with us! Uncover hidden gems, embrace unique
+            cultures, and indulge in remarkable experiences. Our platform is
+            your key to extraordinary adventures, carefully tailored to ignite
+            your wanderlust.
+          </p>
+        </div>
+        <div class="contact-button">
+          <button>Contact Us!</button>
         </div>
       </div>
-      <div class="lower-footer">
-        <p>All rights reserved © 2024 <a href="About_Us.html">TeamGamed</a>.</p>
-        <ul>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Term & Conditions</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
+    </div>
+    <div class="mid-footer">
+      <div class="container">
+        <div class="footer-brand">
+          <img src="assets/logo.svg" alt="Logo" />
+          <p>
+            Discover new horizons with us! Uncover hidden gems, embrace unique
+            cultures, and indulge in remarkable experiences. Our platform is
+            your key to extraordinary adventures, carefully tailored to ignite
+            your wanderlust.
+          </p>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <p>Feel free to contact and reach us !!</p>
+          <ul>
+            <li>
+              <a href="About_Us.html"><i class="bx bx-phone"></i> <span></span> +12345678910</a>
+            </li>
+            <li>
+              <a href="About_Us.html"><i class="bx bxl-gmail"></i>
+                <span></span> teamgamed@gmail.com</a>
+            </li>
+            <li>
+              <a href="About_Us.html"><i class="bx bx-home"></i> <span></span> FCI | Suez Canal
+                University</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-form">
+          <p>Subscribe our newsletter for more update & news !!</p>
+          <form action="">
+            <input type="email" placeholder="Enter Your Email.." required />
+            <button type="submit">subscribe</button>
+          </form>
+        </div>
       </div>
-    </footer>
-  </body>
+    </div>
+    <div class="lower-footer">
+      <p>All rights reserved © 2024 <a href="About_Us.html">TeamGamed</a>.</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Term & Conditions</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
 </html>
