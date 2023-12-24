@@ -15,7 +15,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="styles/scroll_bar.css">
-
+    <script>
+      function nv() {
+        var navbar = document.getElementById("navbar");
+        var scrollvalue = window.scrollY;
+        if (scrollvalue < 83) {
+          navbar.classList.remove("new-nav");
+        } else {
+          navbar.classList.add("new-nav");
+        }
+      }
+      window.addEventListener("scroll", nv);
+    </script>
   </head>
   <body class="aboutbody">
 
