@@ -216,22 +216,6 @@ nav ul li a:hover {
   .social a {
     margin: 0 10px;
   }
-
-  /* navbar */
-
-  .navbar li {
-    float: none;
-    margin-right: 0;
-  }
-
-  .navbar li a {
-    display: block;
-    text-align: left;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 15px;
-    margin: 0;
-  }
 }
 
 /* Start Footer */
