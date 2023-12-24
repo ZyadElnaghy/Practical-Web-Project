@@ -29,12 +29,6 @@ body , html {
     margin: 0 auto;
 }
 
-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0;
-}
 
 .Main {
     background-image: url(../assets/hero-banner.jpg);
