@@ -19,7 +19,7 @@
 }
 
 
-body {
+.page {
   background-image: url(../assets/nature-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
