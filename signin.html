@@ -4,20 +4,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Contact Us</title>
+  <title>Sign In</title>
 
   <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="./files/logo.png" />
+  <link rel="stylesheet" href="styles/About_Us_Home_.css" />
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="styles/scroll_bar.css">
   <link rel="stylesheet" href="styles/footer-styles.css">
   <link rel="stylesheet" href="styles/navbar.css">
-  <link rel="stylesheet" href="styles/contact_us.css">
-  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/signin.css" />
   <link rel="stylesheet" href="styles/back-to-top.css">
 </head>
 
@@ -41,24 +41,26 @@
     </nav>
   </div>
 
+  <div class="signin">
+    <h1>Sign In</h1>
+    <form method="post">
+      <div>
+        <label for="email"></label>
+        <input id="email" type="email" required placeholder="Enter your email" name="mail">
 
-
-  <div class="contact-us">
-    <h1>Contact Us</h1>
-    <div class="form-contact-us">
-      <form>
-        <input type="text" placeholder="Your name" required />
-        <input type="email" placeholder="Your email" required />
-        <input type="text" placeholder="The subject" required />
-        <textarea placeholder="Your message" required></textarea>
-        <button type="submit">Send your message</button>
-      </form>
-    </div>
+        <label for="password"></label>
+        <input id="password" type="password" required placeholder="Enter your password" name="password" minlength="8"
+          maxlength="12">
+      </div>
+      <div>
+        <input type="submit" value="Sign Up" class="button">
+      </div>
+      <div class="yes">
+        <span class="havenoaccount">Don't have an account?</span>
+        <a class="signuplink" href="signup.html"><span class="signup">Sign Up</span></a>
+      </div>
+    </form>
   </div>
-
-
-
-
 
   <footer>
     <div class="upper-footer">
