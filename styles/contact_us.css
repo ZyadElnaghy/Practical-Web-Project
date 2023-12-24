@@ -20,14 +20,6 @@ body{
     color: var(--primary-color);
 }
 
-::-webkit-scrollbar{
-    width: 5px;
-}
-
-::-webkit-scrollbar-thumb{
-    border-radius: 10px;
-}
-
 .contact-us form input , 
 .contact-us form textarea ,
 .contact-us button {
