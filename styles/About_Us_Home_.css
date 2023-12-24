@@ -63,8 +63,26 @@ nav ul li a {
 }
 
 nav ul li a:hover {
+  color: var(--primary-color);
+}
+.fixed {
+  height: 60px;
+}
+.new-nav {
+  background-color: var(--secondary-color);
+  color :black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 6;
+  transition: background-color 0.5s ease-in-out;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.new-nav ul li a {
   color: var(--titles);
 }
+
 
 /* About Us */
 
