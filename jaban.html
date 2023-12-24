@@ -10,22 +10,13 @@
         rel="stylesheet"
         href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
+    <link rel="stylesheet" href="styles/scroll_bar.css">
+    <link rel="stylesheet" href="styles/footer-styles.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+
     <title>Travelago</title>
     <script>
-        function nv(){
-            var navbar = document.getElementById("navbar");
-            var scrollvalue = window.scrollY;
-            if(scrollvalue < 83 ){
-                navbar.classList.remove("new-nav");
-            }
-            else{
-                navbar.classList.add("new-nav");
-            }
-            
-        }
-        window.addEventListener("scroll",nv);
-
-
+    
     function reveal() {
         var animated_items = document.querySelectorAll(".dest-album, .destination-details");
 
@@ -49,7 +40,7 @@
     
     <style>
         .Main {
-            background-image: url(../assets/JapanH.jpeg);
+            background-image: url(assets/JapanH.jpeg);
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -187,6 +178,6 @@
         </div>
 
     </footer>
-
+    <script src="styles/navbar.js" ></script>
 </body>
 </html>
