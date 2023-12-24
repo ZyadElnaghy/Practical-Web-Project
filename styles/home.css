@@ -14,17 +14,6 @@
     --width: 1200px;
 }
 
-::-webkit-scrollbar {
-    width: .8vw;
-    height: 10px;
-}
-::-webkit-scrollbar-track {
-    background-color: transparent;
-}
-::-webkit-scrollbar-thumb {
-    background-image: linear-gradient( var(--primary-color) , #2b4455 ) ;
-}
-
 
 body , html {   
     font-family: 'Roboto', sans-serif;
