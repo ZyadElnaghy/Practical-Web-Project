@@ -14,7 +14,7 @@ nav {
     height: 60px;
 }
 .new-nav {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color) !important;
     color :black;
     position: fixed;
     top: 0;
