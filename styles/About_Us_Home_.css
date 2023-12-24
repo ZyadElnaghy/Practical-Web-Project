@@ -19,15 +19,18 @@
 }
 
 
-.page {
+/* .page {
   background-image: url(../assets/nature-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: overlay;
-}
+} */
 
+body {
+  background-color: #F5F5F5;
+}
 
 /* navbar */
 
