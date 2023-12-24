@@ -1,14 +1,12 @@
-:root{
-    --primary-color: #3b79c9;
-    --main-color: #223644;
-    --dark-main-color: #1C2E3B;
-    --secondary-color: #ffffff;
-    --subtitles: #595852;
-    --titles:black;
-    --width: 1200px;
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    background-color: var(--main-color);
 }
 nav {
-    background-color: transparent;
+    background-color:var(--main-color);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     height: 60px;
 }
@@ -16,7 +14,7 @@ nav {
     height: 60px;
 }
 .new-nav {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-color) !important;
     color :black;
     position: fixed;
     top: 0;
@@ -26,8 +24,6 @@ nav {
     transition: background-color 0.5s ease-in-out;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
-
-
 .new-nav ul li a {
     color: var(--titles);
 }
