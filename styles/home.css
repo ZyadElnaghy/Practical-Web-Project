@@ -14,7 +14,22 @@
     --width: 1200px;
 }
 
-body , html {
+::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 100vw;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient( var(--primary-color) , #2b4455 ) ;
+    border-radius: 100vw;
+}
+
+
+body , html {   
     font-family: 'Roboto', sans-serif;
 }
 .page {
