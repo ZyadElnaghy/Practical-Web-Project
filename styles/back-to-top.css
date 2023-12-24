@@ -1,0 +1,30 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.to-top {
+  background: #3b79c9;
+  position: fixed;
+  bottom: 16px;
+  right:32px;
+  width:50px;
+  height:50px;
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:32px;
+  color:white;
+  text-decoration: none;
+  opacity:0;
+  pointer-events: none;
+  transition: all .4s;
+  border: 2px solid white;
+  font-weight: bold;
+}
+
+.to-top.active {
+  bottom:32px;
+  pointer-events: auto;
+  opacity:1;
+}

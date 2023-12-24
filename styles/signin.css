@@ -1,0 +1,106 @@
+:root{
+    --primary-color: #3b79c9;
+    --main-color: #223644;
+    --dark-main-color: #1C2E3B;
+    --secondary-color: #ffffff;
+    --subtitles: #595852;
+    --titles:black;
+    --width: 1200px;
+}
+
+body{
+    background-size: 100% 100%;
+    background-color: hsl(0, 0%, 98%);
+    background-blend-mode: overlay;
+}
+
+.signin{
+    width: 50% ; 
+    height: 390px; 
+    max-width: 700px;; 
+    min-width: 300px; 
+    margin: 10% auto; 
+    background-color: hsl(0, 0%, 98%); 
+    border-radius: 10px; 
+    padding: 1%; 
+    box-shadow: 0 0 10px var(--primary-color); 
+}
+
+.signin ::placeholder{
+    color: var(--primary-color);
+}
+
+.signin form input{ 
+    width: 60%; 
+    max-width: 60%; 
+    min-width: 60%; 
+    height: 40px; 
+    margin: 2% auto; 
+    padding-left:10px; 
+    display: block; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 1px var(--primary-color); 
+    border-radius: 10px; 
+    color: var(--primary-color); 
+} 
+
+.signin h1{ 
+    text-align: center; 
+    font-size: 50px; 
+    color: var(--primary-color); 
+    margin: 20px auto; 
+}
+
+.signin .button{ 
+    width: 60%; 
+    max-width: 60%; 
+    min-width: 60%; 
+    height: 40px; 
+    margin: 2% auto; 
+    padding-left:10px; 
+    display: block; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 1px var(--primary-color); 
+    border-radius: 10px; 
+    color: var(--primary-color);
+    background-color: var(--primary-color); 
+    color: #ccc; 
+    font-size: 20px; 
+    margin: 5% auto; 
+    cursor: pointer; 
+    max-height: 100px; 
+} 
+
+.signin form input:focus ,
+.signin form textarea:focus  {
+    outline: none;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 1px var(--primary-color);
+    font-size: 15px;
+}
+
+.yes{
+    font-size: 20px;
+    text-align: center;
+}
+
+.havenoaccount{
+    color: var(--primary-color);
+}
+
+.signup{
+    color: #ccc;
+}
+
+.signup:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color:hsl(214, 72%, 33%);
+}
+
+.signuplink{
+    text-decoration: none;
+}

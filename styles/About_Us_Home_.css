@@ -18,37 +18,27 @@
   --width: 1200px;
 }
 
+
+/* .page {
+  background-image: url(../assets/nature-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+} */
+
+body {
+  background-color: #F5F5F5;
+}
+
 /* navbar */
 
-nav {
-  background-color: var(--primary-color);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  height: 60px;
-}
-
-.fixed {
-  height: 60px;
-}
-
-nav ul {
+header {
   display: flex;
-  list-style-type: none;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  margin: 20px auto;
-}
-
-nav ul li a {
-  padding: 0 10px;
-  text-decoration: none;
-  color: var(--secondary-color);
-  transition: 0.25s ease-in-out;
-  text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-nav ul li a:hover {
-  color: var(--titles);
+  padding: 15px 0;
 }
 
 /* About Us */
@@ -84,208 +74,6 @@ nav ul li a:hover {
     padding-bottom: 100px;
   }
 }
-
-/* Start Footer */
-
-footer .container {
-  max-width: var(--width);
-  padding: 10px;
-}
-
-footer {
-  background-color: var(--main-color);
-}
-
-/* [1] Start Upper-Footer */
-
-footer .upper-footer {
-  height: 350px;
-  background-color: var(--primary-color);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-footer .upper-footer .container {
-  /* max-width: var(--width); */
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-footer .upper-footer .container .some-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-}
-
-footer .upper-footer p {
-  color: white;
-  /* font-size: 1.2rem; */
-  margin-bottom: 10px;
-  width: 85%;
-}
-@media (max-width: 800px) {
-  footer .upper-footer p {
-    width: unset;
-  }
-}
-
-footer .upper-footer p:first-of-type {
-  text-transform: uppercase;
-}
-
-footer .upper-footer p:nth-of-type(2) {
-  text-transform: uppercase;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-footer .upper-footer button {
-  margin: 20px;
-  color: white;
-  outline: none;
-  background-color: transparent;
-  padding: 12px 30px;
-  font-size: 1.2rem;
-  border-radius: 50px;
-  border: 2px white solid;
-  transition: 0.3s ease-in-out;
-}
-
-footer .upper-footer button:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  transform: scale(1.1);
-}
-
-/* [1] End Upper Footer */
-
-/* [3] Start Lower-Footer */
-
-footer .lower-footer {
-  height: 60px;
-  background-color: var(--dark-main-color);
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  align-items: center;
-  color: white;
-}
-
-footer .lower-footer p {
-  margin: 20px;
-}
-
-footer .lower-footer ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .lower-footer ul li {
-  position: relative;
-  margin: 20px;
-  transition: 0.3s ease-in-out;
-}
-
-footer .lower-footer a {
-  text-decoration: none;
-  color: inherit;
-}
-
-footer .lower-footer ul li:hover {
-  transform: scale(1.05);
-}
-
-footer .lower-footer ul li:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  right: -25px;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-/* [3] Start Lower-Footer */
-
-/* End Footer */
-
-/* [3] Start Lower-Footer */
-
-footer .lower-footer {
-  background-color: var(--dark-main-color);
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around;
-  align-items: center;
-  color: white;
-}
-
-footer .lower-footer p {
-  margin: 20px;
-}
-
-footer .lower-footer ul {
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer .lower-footer ul li {
-  position: relative;
-  margin: 20px;
-  transition: 0.3s ease-in-out;
-}
-
-footer .lower-footer a {
-  text-decoration: none;
-  color: inherit;
-}
-
-footer .lower-footer ul li:hover {
-  transform: scale(1.05);
-}
-
-footer .lower-footer ul li:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  right: -25px;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-/* [3] Start Lower-Footer */
-
-@media screen and (max-width: 1065px) {
-  .footer-form {
-    grid-column: span 2;
-  }
-  .upper-footer .container {
-    flex-direction: column;
-  }
-  footer .container {
-    max-width: none;
-  }
-}
-
-@media screen and (max-width: 714px) {
-  .footer-form {
-    grid-column: span 1;
-  }
-  footer .lower-footer {
-    flex-direction: column;
-  }
-}
-
-/* End Footer */
 
 @media screen and (max-width: 1650px) {
   .home-content {
