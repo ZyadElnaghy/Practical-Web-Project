@@ -24,7 +24,7 @@ body {
   width: 90%;
   /* height: 1200px; */
   display: grid;
-  margin: auto;
+  margin: 50px auto;
   grid-auto-flow: column;
   grid-template-rows: repeat(2, 1fr);
 }
