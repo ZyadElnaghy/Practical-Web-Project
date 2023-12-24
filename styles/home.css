@@ -241,6 +241,7 @@ button:hover {
 @media (max-width: 1200px) {
     .searchForm {
         grid-template-columns: repeat(4,1fr);
+        width: 95%;
     }
     .searchForm button {
         grid-column: 1 / -1;
@@ -250,6 +251,7 @@ button:hover {
 @media (max-width: 768px) {
     .searchForm {
         grid-template-columns: repeat(2,1fr);
+        width : 95%;
     }
 }
 
