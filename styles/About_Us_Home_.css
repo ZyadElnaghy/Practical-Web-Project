@@ -18,15 +18,30 @@
   --width: 1200px;
 }
 
-/* navbar */
 
-nav {
-  background-color: var(--primary-color);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  height: 60px;
+body {
+  background-image: url(../assets/nature-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
 }
 
-.fixed {
+
+/* navbar */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
+}
+
+
+nav {
+  background-color: transparent;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
   height: 60px;
 }
 
