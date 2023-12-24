@@ -1,0 +1,333 @@
+:root{
+    --primary-color: #3b79c9;
+    --main-color: #223644;
+    --dark-main-color: #1C2E3B;
+    --secondary-color: #ffffff;
+    --subtitles: #595852;
+    --titles:black;
+    --width: 1200px;
+}
+
+.form-group{
+    padding: 20px 50px;
+}
+
+.form-group:nth-child(1){
+    margin-top: 30px;
+}
+
+.form-group:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.form-group:nth-child(2) textarea{
+    width: 100%;
+    height: 100px;
+    margin: 0;
+}
+
+.form-group:nth-child(2) button{
+    width: 25%;
+    height: 30px;
+    margin: 0 20px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.form-group:nth-child(2) button:hover{
+    background-color: #1c5ba8;
+    box-shadow: 0 0 4px #1c5ba8;
+}
+
+.info-text{
+    color: var(--subtitles);
+    font-size: .9rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.form-group .heading{
+    color: var(--subtitles);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    border-bottom: solid 1px var(--subtitles);
+}
+
+label{
+    color: var(--subtitles);
+    font-size: .9rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px #292929;
+    outline: none;
+    transition: all .1s;
+}
+
+select:hover{
+    border: solid 1px var(--primary-color);
+}
+
+.controls{
+    padding: 10px 20px;
+}
+
+.controls input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: solid 1px #292929;
+    outline: none;
+    transition: all .1s;
+}
+
+.controls input:hover{
+    border: solid 1px var(--primary-color);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+footer .container {
+    max-width: var(--width);
+    padding: 10px;
+}
+
+footer {
+    height: 400px;
+    background-color: var(--main-color);
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, 1fr) auto;
+}
+
+
+footer .mid-footer {
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .mid-footer .container {
+    margin: 20px auto;
+    /* width: var(--width); */
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+footer .mid-footer .container > div {
+    margin: 50px;
+}
+
+footer .mid-footer .container .footer-brand p {
+    margin-top: 20px;
+    color: white;
+    font-size: 1.1rem;
+}
+
+footer .mid-footer .container .footer-contact  h4 {
+    color: white;
+    font-weight: normal;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+footer .mid-footer .container .footer-contact  h4::after {
+    content: "";
+    height: 2px;
+    width: 50px;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    right: 20px;
+}
+
+footer .mid-footer .footer-contact p {
+    color: white;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+footer .mid-footer ul {
+    list-style-type: none;
+}
+
+footer .mid-footer ul li {
+    margin: 20px 0;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+footer .mid-footer ul li a{
+    margin-left: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .mid-footer ul li a span {
+    display: inline-block;
+    width: 5px;
+}
+
+footer .mid-footer .footer-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+footer .mid-footer .footer-form p {
+    color: white;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+footer .mid-footer .footer-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .mid-footer form input,
+footer .mid-footer form button {
+    width: 100%;
+    margin: 5px;
+    border-radius: 30px;
+    padding: 12px 30px;
+    outline: none;
+    border: 0;
+}
+
+footer .mid-footer form button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+footer .mid-footer form button:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+/* [2] End Mid Footer */
+
+
+/* [3] Start Lower-Footer */
+
+footer .lower-footer {
+    background-color: var(--dark-main-color);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+footer .lower-footer p {
+    margin: 20px;
+}
+
+footer .lower-footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .lower-footer ul li {
+    position: relative;
+    margin: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+footer .lower-footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .lower-footer ul li:hover {
+    transform: scale(1.05);
+}
+
+footer .lower-footer ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+/* [3] Start Lower-Footer */
+
+
+/* End Footer */
+
+/* [3] Start Lower-Footer */
+
+footer .lower-footer {
+    background-color: var(--dark-main-color);
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+footer .lower-footer p {
+    margin: 20px;
+}
+
+footer .lower-footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .lower-footer ul li {
+    position: relative;
+    margin: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+footer .lower-footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .lower-footer ul li:hover {
+    transform: scale(1.05);
+}
+
+footer .lower-footer ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: rgba(255, 255, 255, .3);
+}
