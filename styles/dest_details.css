@@ -51,7 +51,7 @@
 }
 
 .city-pic{
-    width: 300px;
+    width: 25%;
     height: auto;
     border-radius: 5px;
     float: right;
@@ -126,4 +126,47 @@
     max-width: 1300px;
     transform: translateY(0);
     opacity: 1;
+}
+
+@media (max-width: 450px) {
+    .city-pic {
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+    }
+
+    .destination-details{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .destination-details.active{
+        padding: 0;
+    }
+
+    .city-description{
+        text-align: left;
+    }
+
+    .city-description h2{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    .city-description p{
+        font-size: 16px;
+    }
+
+    .dest-album{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dest-album img {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
