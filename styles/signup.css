@@ -26,41 +26,43 @@ body{
     box-shadow: 0 0 10px var(--primary-color); 
 }
 
-.name{
-    text-align: center;
+.signup form input, .signup button{
+    width: 60%;
+    max-width: 60%;
+    min-width: 60%;
+    height: 40px;
+    font-size: 14px;
+    margin: 2% auto;
+    padding:1.5% 10px;
+    display: block;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1px var(--primary-color);
+    border-radius: 10px;
+    color: var(--primary-color);
 }
 
-#firstname, #lastname{ 
-    width: 29%; 
-    max-width: 29%; 
-    min-width: 29%; 
-    height: 40px; 
-    margin: 2% .5% auto .5%;  
-    padding-left:10px; 
-    border: 1px solid #ccc; 
-    box-shadow: 0 0 1px var(--primary-color); 
-    border-radius: 10px; 
-    color: var(--primary-color); 
+.signup form input:focus{
+    outline: none;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 1px var(--primary-color);
+    font-size: 15px;
+    transition: 0.3s;
 }
 
-#male, #female{
-    margin: 2% auto; 
-    padding-left:10px;
+.signup button{
+    background-color: var(--primary-color);
+    color: #ccc;
+    font-size: 20px;
+    margin: 35px auto;
+    padding: 5px;
+    cursor: pointer;
+    max-height: 100px;
 }
 
-#email, #password, #date, #country, #countrycode, #phonenumber, .gender{ 
-    width: 60%; 
-    max-width: 60%; 
-    min-width: 60%; 
-    height: 40px; 
-    margin: 2% auto; 
-    padding-left:10px; 
-    display: block; 
-    border: 1px solid #ccc; 
-    box-shadow: 0 0 1px var(--primary-color); 
-    border-radius: 10px; 
-    color: var(--primary-color); 
-} 
+.signup button:hover{
+    color: #ccc;
+ 	background-color:hsl(214, 72%, 33%);
+}
 
 .signup h1{ 
     text-align: center; 
@@ -91,14 +93,6 @@ body{
 
 .signup ::placeholder{
     color: var(--primary-color);
-}
-
-.signup form input:focus ,
-.signup form textarea:focus  {
-    outline: none;
-    border: 1px solid var(--primary-color);
-    box-shadow: 0 0 1px var(--primary-color);
-    font-size: 15px;
 }
 
 .yes{
