@@ -234,10 +234,6 @@ footer {
     width: 100%;
     bottom: 0;
   */
-  /*
-    i need to make the end of the footer to be at the end of the page
-    and the page to be scrollable 
-  */
   background-color: var(--main-color);
 }
 
