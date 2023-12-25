@@ -418,6 +418,12 @@ footer .lower-footer ul li:not(:last-child)::after {
   footer .container {
     max-width: none;
   }
+  footer .upper-footer {
+    height: 430px;
+  }
+  footer .lower-footer {
+    height: 80px;
+  }
 }
 
 @media screen and (max-width: 714px) {
