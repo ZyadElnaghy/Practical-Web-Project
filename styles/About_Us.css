@@ -16,6 +16,7 @@
   --subtitles: #595852;
   --titles: black;
   --width: 1200px;
+  --gunmetal: rgb(59, 120, 200);
 }
 
 /* navbar */
@@ -54,8 +55,7 @@ nav ul li a:hover {
 /* About Us */
 
 .aboutbody {
-  --gunmetal: rgb(240, 242, 239);
-  background-color: var(--gunmetal);
+  background-color: var(--secondary-color);
 }
 
 .about {
@@ -85,7 +85,6 @@ nav ul li a:hover {
 }
 
 .abt-text h1 span {
-  --gunmetal: rgb(59, 120, 200);
   color: var(--gunmetal);
   letter-spacing: 1px;
   font-size: 60px;
@@ -110,7 +109,6 @@ nav ul li a:hover {
 
 .connectbtn {
   display: inline-block;
-  --gunmetal: rgb(59, 120, 200);
   background-color: var(--gunmetal);
   font-size: 18px;
   color: white;
@@ -138,7 +136,6 @@ nav ul li a:hover {
   width: 40px;
   margin: 4px;
   font-size: 30px;
-  --gunmetal: rgb(59, 120, 200);
   color: var(--gunmetal);
   background-color: white;
   border-radius: 20px;
@@ -157,7 +154,6 @@ nav ul li a:hover {
   margin: 4px;
   height: 40px;
   width: 40px;
-  --gunmetal: rgb(59, 120, 200);
   color: var(--gunmetal);
   background-color: white;
   display: inline-flex;
@@ -233,10 +229,6 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
-  */
-  /*
-    i need to make the end of the footer to be at the end of the page
-    and the page to be scrollable 
   */
   background-color: var(--main-color);
 }
@@ -420,10 +412,10 @@ footer .lower-footer ul li:not(:last-child)::after {
     max-width: none;
   }
   footer .upper-footer {
-    height: 430px;
+    height: 450px;
   }
   footer .lower-footer {
-    height: 80px;
+    height: 100px;
   }
 }
 
@@ -447,5 +439,12 @@ footer .lower-footer ul li:not(:last-child)::after {
 @media screen and (max-width: 1450px) {
   .home-content {
     width: 1200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Adjust styles for mobile devices */
+  footer {
+    position: relative; /* Override the margin-top: auto for mobile */
   }
 }

@@ -16,8 +16,8 @@
   --subtitles: #595852;
   --titles: black;
   --width: 1200px;
+  --gunmetal: rgb(59, 120, 200);
 }
-
 
 /* .page {
   background-image: url(../assets/nature-background.jpg);
@@ -29,7 +29,7 @@
 } */
 
 body {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
 /* navbar */
@@ -58,7 +58,6 @@ header {
   font-size: 40px;
   font-weight: 600;
   color: white;
-  --gunmetal: rgb(59, 120, 200);
   background: var(--gunmetal);
   padding: 80px;
   padding-bottom: 200px;
