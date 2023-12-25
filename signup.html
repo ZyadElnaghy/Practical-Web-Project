@@ -47,20 +47,20 @@
       <div class="name">
         <span>
           <label for="firstname"></label>
-          <input id="firstname" type="text" required placeholder="Enter your first name" name="first name">
+          <input id="firstname" type="text" required placeholder="First name" name="first name">
         </span>
         <span>
           <label for="lastname"></label>
-          <input id="lastname" type="text" required placeholder="Enter your last name" name="last name">
+          <input id="lastname" type="text" required placeholder="Last name" name="last name">
         </span>
       </div>
       <div>
         <label for="email"></label>
-        <input id="email" type="email" required placeholder="Enter your email" name="mail">
+        <input id="email" type="email" required placeholder="Email" name="mail">
       </div>
       <div>
         <label for="password"></label>
-        <input id="password" type="password" required placeholder="Enter your password" name="password" minlength="8"
+        <input id="password" type="password" required placeholder="Password" name="password" minlength="8"
           maxlength="12">
       </div>
       <div class="gender">
@@ -76,11 +76,11 @@
       </div>
       <div>
         <label></label>
-        <input id="date" type="date" required placeholder="date" name="date">
+        <input id="date" type="date" required placeholder="Date" name="date">
       </div>
       <div>
         <label></label>
-        <input id="country" list="countries" placeholder="Choose your country" name="countries">
+        <input id="country" list="countries" placeholder="Country" name="countries">
         <datalist id="countries">
           <option value="Afghanistan">Afghanistan</option>
           <option value="Albania">Albania</option>
@@ -326,7 +326,7 @@
       </div>
       <div>
         <label for="countrycode"></label>
-        <input list="code" name="code" id="countrycode" placeholder="Choose your country code">
+        <input list="code" name="code" id="countrycode" placeholder="Country code">
         <datalist id="code">
           <option data-countryCode="DZ">Algeria (+213)</option>
           <option data-countryCode="AD">Andorra (+376)</option>
@@ -541,14 +541,14 @@
           <option data-countryCode="ZM">Zambia (+260)</option>
           <option data-countryCode="ZW">Zimbabwe (+263)</option>
         </datalist>
-        <input id="phonenumber" type="text" required placeholder="Enter your phone number" name="phone">
+        <input id="phonenumber" type="text" required placeholder="Phone number" name="phone">
       </div>
       <div>
         <input class="button" type="submit" value="Sign In">
       </div>
       <div class="yes">
-        <span class="haveaccount">Already have an account?</span>
-        <a class="signinlink" href="signin.html"><span class="signin">Sign In</span></a>
+        <div class="haveaccount">Already have an account?</div>
+        <a class="signinlink" href="signin.html"><div class="signin">Sign In</div></a>
       </div>
     </form>
   </div>
@@ -618,5 +618,4 @@
   <script src="styles/back-to-top.js"></script>
   <script src="styles/navbar.js"></script>
 </body>
-
 </html>

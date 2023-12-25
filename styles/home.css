@@ -568,8 +568,8 @@ button:hover {
     border-radius: 25px;
     position: absolute;
     bottom: 9%;
-    left: 20%;
-    right: 5%;
+    left: 8%;
+    right: 8%;
 }
 
 
@@ -616,8 +616,8 @@ button:hover {
     padding-left: 10px;
     padding-right: 10px;
     position: absolute;
-    top: 2%;
-    right: 5%;
+    top: -10%;
+    right: 9%;
 }
 
 .name .cont {
