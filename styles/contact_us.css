@@ -68,6 +68,12 @@ body{
     max-height: 100px;
 }
 
+.contact-us button:hover{
+	/*background-color: var(--primary-color);*/
+    	color: #ccc;
+ 	background-color:hsl(214, 72%, 33%);
+}
+
 .contact-us h1{
     text-align: center;
     font-size: 50px;
