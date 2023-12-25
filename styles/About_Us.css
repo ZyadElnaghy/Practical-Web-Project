@@ -8,40 +8,47 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --primary-color: #3b79c9;
+  --main-color: #223644;
+  --dark-main-color: #1c2e3b;
+  --secondary-color: #ffffff;
+  --subtitles: #595852;
+  --titles: black;
+  --width: 1200px;
+}
+
 /* navbar */
 
-.navbar {
-  display: block;
-  position: fixed;
+nav {
+  background-color: var(--primary-color);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  height: 60px;
+}
+
+.fixed {
+  height: 60px;
+}
+
+nav ul {
+  display: flex;
   list-style-type: none;
-  margin: 0;
-  padding: 25px;
-  overflow: hidden;
-  width: 100%;
-  --gunmetal: rgb(59, 120, 200);
-  background: var(--gunmetal);
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
 }
 
-.navbar li {
-  float: left;
-  margin-right: 30px;
-}
-
-.navbar li:last-child {
-  margin-right: 0;
-}
-
-.navbar li a {
-  color: white;
-  text-align: center;
-  padding: 15px 16px;
+nav ul li a {
+  padding: 0 10px;
   text-decoration: none;
-  border-radius: 20px;
+  color: var(--secondary-color);
+  transition: 0.25s ease-in-out;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar li a:hover {
-  background-color: #ddd;
-  color: black;
+nav ul li a:hover {
+  color: var(--titles);
 }
 
 /* About Us */
@@ -57,9 +64,12 @@
 }
 
 .about img {
-  margin-top: 20px;
-  height: auto;
-  width: 400px;
+  margin-bottom: 50px;
+  /*
+    margin-top: 10px;
+  */
+  height: 400px;
+  width: auto;
   border-radius: 120px;
 }
 
@@ -141,63 +151,6 @@
   transform: scale(1.2);
 }
 
-/* footer */
-
-.footer {
-  margin-top: 80px;
-  --gunmetal: rgb(59, 120, 200);
-  background-color: var(--gunmetal);
-}
-
-.foot {
-  padding: 20px 0;
-}
-
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-
-.footlinks h4 {
-  margin-top: 30px;
-  font-size: 20px;
-  font-weight: 600;
-  color: white;
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.footlinks {
-  margin-bottom: 100px;
-}
-
-.footlinks h4::before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 70px;
-  left: 0;
-  bottom: -7px;
-  background: white;
-}
-
-.footlinks ul li {
-  margin-bottom: 15px;
-}
-
-.footlinks ul li a {
-  font-size: 17px;
-  color: #dddddd;
-  display: block;
-  transition: ease 0.3s;
-}
-
-.footlinks ul li a:hover {
-  transform: translate(6px);
-  color: white;
-}
-
 .social a {
   font-size: 25px;
   margin: 4px;
@@ -257,30 +210,6 @@
     margin: 0 10px;
   }
 
-  .footer-content {
-    flex-direction: column;
-  }
-
-  .footlinks {
-    margin-bottom: 30px;
-  }
-
-  .footlinks h4 {
-    margin-bottom: 20px;
-  }
-
-  .footlinks h4::before {
-    width: 50px;
-  }
-
-  .footlinks ul li {
-    margin-bottom: 10px;
-  }
-
-  .footlinks ul li a {
-    font-size: 15px;
-  }
-
   .social {
     margin: 0 auto;
     display: block;
@@ -289,20 +218,233 @@
   .social a {
     margin: 0 10px;
   }
+}
 
-  /* navbar */
+/* Start Footer */
 
-  .navbar li {
-    float: none;
-    margin-right: 0;
-  }
+footer .container {
+  max-width: var(--width);
+  padding: 10px;
+}
 
-  .navbar li a {
-    display: block;
-    text-align: left;
+footer {
+  /*
+    position: fixed;
     width: 100%;
-    box-sizing: border-box;
-    padding: 15px;
-    margin: 0;
+    bottom: 0;
+  */
+  /*
+    i need to make the end of the footer to be at the end of the page
+    and the page to be scrollable 
+  */
+  background-color: var(--main-color);
+}
+
+/* [1] Start Upper-Footer */
+
+footer .upper-footer {
+  height: 300px;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer .upper-footer .container {
+  /* max-width: var(--width); */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .upper-footer .container .some-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+
+footer .upper-footer p {
+  color: white;
+  /* font-size: 1.2rem; */
+  margin-bottom: 10px;
+  width: 85%;
+}
+@media (max-width: 800px) {
+  footer .upper-footer p {
+    width: unset;
+  }
+}
+
+footer .upper-footer p:first-of-type {
+  text-transform: uppercase;
+}
+
+footer .upper-footer p:nth-of-type(2) {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+footer .upper-footer button {
+  margin: 20px;
+  color: white;
+  outline: none;
+  background-color: transparent;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  border: 2px white solid;
+  transition: 0.3s ease-in-out;
+}
+
+footer .upper-footer button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+/* [1] End Upper Footer */
+
+/* [3] Start Lower-Footer */
+
+footer .lower-footer {
+  height: 60px;
+  background-color: var(--dark-main-color);
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+footer .lower-footer p {
+  margin: 20px;
+}
+
+footer .lower-footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .lower-footer ul li {
+  position: relative;
+  margin: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+footer .lower-footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer .lower-footer ul li:hover {
+  transform: scale(1.05);
+}
+
+footer .lower-footer ul li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -25px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* [3] Start Lower-Footer */
+
+/* End Footer */
+
+/* [3] Start Lower-Footer */
+
+footer .lower-footer {
+  background-color: var(--dark-main-color);
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+footer .lower-footer p {
+  margin: 20px;
+}
+
+footer .lower-footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .lower-footer ul li {
+  position: relative;
+  margin: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+footer .lower-footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer .lower-footer ul li:hover {
+  transform: scale(1.05);
+}
+
+footer .lower-footer ul li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -25px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* [3] Start Lower-Footer */
+
+@media screen and (max-width: 1065px) {
+  .footer-form {
+    grid-column: span 2;
+  }
+  .upper-footer .container {
+    flex-direction: column;
+  }
+  footer .container {
+    max-width: none;
+  }
+  footer .upper-footer {
+    height: 430px;
+  }
+  footer .lower-footer {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 714px) {
+  .footer-form {
+    grid-column: span 1;
+  }
+  footer .lower-footer {
+    flex-direction: column;
+  }
+}
+
+/* End Footer */
+
+@media screen and (max-width: 1650px) {
+  .home-content {
+    width: 1400px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .home-content {
+    width: 1200px;
   }
 }

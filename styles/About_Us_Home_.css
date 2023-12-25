@@ -8,39 +8,37 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --primary-color: #3b79c9;
+  --main-color: #223644;
+  --dark-main-color: #1c2e3b;
+  --secondary-color: #ffffff;
+  --subtitles: #595852;
+  --titles: black;
+  --width: 1200px;
+}
+
+
+/* .page {
+  background-image: url(../assets/nature-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+} */
+
+body {
+  background-color: #F5F5F5;
+}
+
 /* navbar */
 
-.navbar {
-  display: block;
-  list-style-type: none;
-  margin: 0;
-  padding: 25px;
-  overflow: hidden;
-  width: 100%;
-  --gunmetal: rgb(59, 120, 200);
-  background: var(--gunmetal);
-}
-
-.navbar li {
-  float: left;
-  margin-right: 30px;
-}
-
-.navbar li:last-child {
-  margin-right: 0;
-}
-
-.navbar li a {
-  color: white;
-  text-align: center;
-  padding: 15px 16px;
-  text-decoration: none;
-  border-radius: 20px;
-}
-
-.navbar li a:hover {
-  background-color: #ddd;
-  color: black;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0;
 }
 
 /* About Us */
@@ -68,33 +66,23 @@
   margin: 35px;
 }
 
-.about div a:hover {
-  transform: scale(1.1);
-  box-shadow: inset 0 0 60px whitesmoke, inset 20px 0 80px var(--gunmetal),
-    inset -20px 0 80px var(--gunmetal), inset 20px 0 300px var(--gunmetal),
-    inset -20px 0 300px var(--gunmetal), 0 0 50px #fff,
-    -10px 0 80px var(--gunmetal), 10px 0 80px var(--gunmetal);
-}
-
 /* Media Queries for responsiveness */
 
 @media only screen and (max-width: 600px) {
-  .navbar li {
-    float: none;
-    margin-right: 0;
-  }
-
-  .navbar li a {
-    display: block;
-    text-align: left;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 15px;
-    margin: 0;
-  }
-
   .about div a {
     padding: 40px;
     padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .home-content {
+    width: 1400px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .home-content {
+    width: 1200px;
   }
 }
