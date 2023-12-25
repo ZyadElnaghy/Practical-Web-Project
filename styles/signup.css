@@ -1,0 +1,128 @@
+:root{
+    --primary-color: #3b79c9;
+    --main-color: #223644;
+    --dark-main-color: #1C2E3B;
+    --secondary-color: #ffffff;
+    --subtitles: #595852;
+    --titles:black;
+    --width: 1200px;
+}
+
+body{
+    background-size: 100% 100%;
+    background-color: hsl(0, 0%, 98%);
+    background-blend-mode: overlay;
+}
+
+.signup{
+    width: 50% ; 
+    height: 810px; 
+    max-width: 700px;; 
+    min-width: 300px; 
+    margin: 10% auto; 
+    background-color: hsl(0, 0%, 98%); 
+    border-radius: 10px; 
+    padding: 1%; 
+    box-shadow: 0 0 10px var(--primary-color); 
+}
+
+.name{
+    text-align: center;
+}
+
+#firstname, #lastname{ 
+    width: 29%; 
+    max-width: 29%; 
+    min-width: 29%; 
+    height: 40px; 
+    margin: 2% .5% auto .5%;  
+    padding-left:10px; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 1px var(--primary-color); 
+    border-radius: 10px; 
+    color: var(--primary-color); 
+}
+
+#male, #female{
+    margin: 2% auto; 
+    padding-left:10px;
+}
+
+#email, #password, #date, #country, #countrycode, #phonenumber, .gender{ 
+    width: 60%; 
+    max-width: 60%; 
+    min-width: 60%; 
+    height: 40px; 
+    margin: 2% auto; 
+    padding-left:10px; 
+    display: block; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 1px var(--primary-color); 
+    border-radius: 10px; 
+    color: var(--primary-color); 
+} 
+
+.signup h1{ 
+    text-align: center; 
+    font-size: 50px; 
+    color: var(--primary-color); 
+    margin: 20px auto; 
+}
+
+.signup .button{ 
+    width: 60%; 
+    max-width: 60%; 
+    min-width: 60%; 
+    height: 40px; 
+    margin: 2% auto; 
+    padding-left:10px; 
+    display: block; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 0 1px var(--primary-color); 
+    border-radius: 10px; 
+    color: var(--primary-color);
+    background-color: var(--primary-color); 
+    color: #ccc; 
+    font-size: 20px; 
+    margin: 5% auto; 
+    cursor: pointer; 
+    max-height: 100px; 
+} 
+
+.signup ::placeholder{
+    color: var(--primary-color);
+}
+
+.signup form input:focus ,
+.signup form textarea:focus  {
+    outline: none;
+    border: 1px solid var(--primary-color);
+    box-shadow: 0 0 1px var(--primary-color);
+    font-size: 15px;
+}
+
+.yes{
+    font-size: 20px;
+    text-align: center;
+}
+
+.haveaccount{
+    color: var(--primary-color);
+}
+
+.signin{
+    color: #ccc;
+}
+
+.signin:hover{
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color:hsl(214, 72%, 33%);
+}
+
+.signinlink{
+    text-decoration: none;
+}
