@@ -42,17 +42,15 @@
   </div>
 
   <div class="signup">
-    <form method="post">
+    <form method="post" class="signup_form">
       <h1>Sign Up</h1>
-      <div class="name">
-        <span>
-          <label for="firstname"></label>
-          <input id="firstname" type="text" required placeholder="First name" name="first name">
-        </span>
-        <span>
-          <label for="lastname"></label>
-          <input id="lastname" type="text" required placeholder="Last name" name="last name">
-        </span>
+      <div>
+        <label for="firstname"></label>
+        <input id="firstname" type="text" required placeholder="First name" name="first name">
+      </div>
+      <div>
+        <label for="lastname"></label>
+        <input id="lastname" type="text" required placeholder="Last name" name="last name">
       </div>
       <div>
         <label for="email"></label>
@@ -63,16 +61,13 @@
         <input id="password" type="password" required placeholder="Password" name="password" minlength="8"
           maxlength="12">
       </div>
-      <div class="gender">
-        <label></label>
-        <span>
-          <input id="male" type="radio" name="Gender" value="Male">
-          <label for="male">Male</label>
-        </span>
-        <span>
-          <input id="female" type="radio" name="Gender" value="Female">
-          <label for="female">Female</label>
-        </span>
+      <div>
+        <label for="gender"></label>
+        <input id="gender" list="genders" placeholder="Gender" name="genders">
+        <datalist id="genders">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </datalist>
       </div>
       <div>
         <label></label>
@@ -544,7 +539,7 @@
         <input id="phonenumber" type="text" required placeholder="Phone number" name="phone">
       </div>
       <div>
-        <input class="button" type="submit" value="Sign In">
+        <button type="submit">Sign Up</button>
       </div>
       <div class="yes">
         <div class="haveaccount">Already have an account?</div>
