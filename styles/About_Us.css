@@ -64,8 +64,10 @@ nav ul li a:hover {
 }
 
 .about img {
-  margin-bottom: 30px;
-  margin-top: 30px;
+  margin-bottom: 50px;
+  /*
+    margin-top: 10px;
+  */
   height: 400px;
   width: auto;
   border-radius: 120px;
@@ -226,9 +228,15 @@ footer .container {
 }
 
 footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  /*
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  */
+  /*
+    i need to make the end of the footer to be at the end of the page
+    and the page to be scrollable 
+  */
   background-color: var(--main-color);
 }
 
@@ -409,6 +417,12 @@ footer .lower-footer ul li:not(:last-child)::after {
   }
   footer .container {
     max-width: none;
+  }
+  footer .upper-footer {
+    height: 430px;
+  }
+  footer .lower-footer {
+    height: 80px;
   }
 }
 
