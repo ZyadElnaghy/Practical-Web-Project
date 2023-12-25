@@ -88,6 +88,7 @@ nav ul li a:hover {
   --gunmetal: rgb(59, 120, 200);
   color: var(--gunmetal);
   letter-spacing: 1px;
+  font-size: 60px;
 }
 
 .abt-text p {
