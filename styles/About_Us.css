@@ -416,10 +416,10 @@ footer .lower-footer ul li:not(:last-child)::after {
     max-width: none;
   }
   footer .upper-footer {
-    height: 430px;
+    height: 450px;
   }
   footer .lower-footer {
-    height: 80px;
+    height: 100px;
   }
 }
 
@@ -443,5 +443,12 @@ footer .lower-footer ul li:not(:last-child)::after {
 @media screen and (max-width: 1450px) {
   .home-content {
     width: 1200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Adjust styles for mobile devices */
+  footer {
+    position: relative; /* Override the margin-top: auto for mobile */
   }
 }
