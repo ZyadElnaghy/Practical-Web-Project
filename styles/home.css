@@ -415,6 +415,7 @@ button:hover {
 }
 
 .view-all-packages:hover{
+    transform: scale(1.03);
     background-color:hsl(214, 72%, 33%);
     cursor: pointer;
 }
@@ -579,21 +580,22 @@ button:hover {
     align-items: center;
 }
 
-.more_destination button {
-    text-align: center;
-    background-color:  hsl(214, 57%, 51%);
-    text-transform: uppercase;
-    color: white;
+.more_destination {
     width: 200px;
-    padding: 12px 30px;
-    border-radius: 50px;
-    outline: none;
-    border: 0;
-    transition: 0.3s ease-in-out;
+    height:50px;
+    color:white;
+    text-align: center;
+    background-color: hsl(214, 57%, 51%);
+    transition: 0.25s ease-in-out;
+    text-transform: uppercase;
+    margin: auto;
+    padding-top:4px;
+    border-radius: 54px;
+    /* margin-bottom: 50px; */
 }
 
-.more_destination button:hover{
-    transform: scale(1.05);
+.more_destination:hover{
+    transform: scale(1.03);
     background-color:hsl(214, 72%, 33%);
     cursor: pointer;
 }

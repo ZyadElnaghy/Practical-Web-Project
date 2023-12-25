@@ -16,7 +16,7 @@ body{
 
 .signin{
     width: 50% ; 
-    height: 390px; 
+    height: 430px; 
     max-width: 700px;; 
     min-width: 300px; 
     margin: 10% auto; 
@@ -30,13 +30,14 @@ body{
     color: var(--primary-color);
 }
 
-.signin form input{ 
+.signin form input, .signin button{ 
     width: 60%; 
     max-width: 60%; 
     min-width: 60%; 
     height: 40px; 
-    margin: 2% auto; 
-    padding-left:10px; 
+    font-size: 14px;
+    margin: 2% auto;
+    padding:1.5% 10px; 
     display: block; 
     border: 1px solid #ccc; 
     box-shadow: 0 0 1px var(--primary-color); 
@@ -71,12 +72,27 @@ body{
     max-height: 100px; 
 } 
 
-.signin form input:focus ,
-.signin form textarea:focus  {
+.signin form input:focus{
     outline: none;
     border: 1px solid var(--primary-color);
     box-shadow: 0 0 1px var(--primary-color);
     font-size: 15px;
+    transition: 0.3s;
+}
+
+.signin button{
+    background-color: var(--primary-color);
+    color: #ccc;
+    font-size: 20px;
+    margin: 35px auto;
+    padding: 5px;
+    cursor: pointer;
+    max-height: 100px;
+}
+
+.signin button:hover{
+    color: #ccc;
+ 	background-color:hsl(214, 72%, 33%);
 }
 
 .yes{
