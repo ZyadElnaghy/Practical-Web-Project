@@ -5,11 +5,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
   <link rel="stylesheet" href="styles/home.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
   <link rel="stylesheet" href="styles/scroll_bar.css">
   <link rel="stylesheet" href="styles/footer-styles.css">
+  <link rel="stylesheet" href="styles/back-to-top.css">
   <!-- link this if you want to take navbar style and don't forget to take fixed div in Main section and also link navbar.js  -->
   <link rel="stylesheet" href="styles/navbar.css">
   <title>Tourly</title>
@@ -17,9 +18,14 @@
 </head>
 
 <body>
-  <p id="home"></p>
+
+  <a href="#" class="to-top">
+    <i class="bx bx-up-arrow-alt"></i>
+  </a>
+
 
   <section class="Main">
+
     <header style="background-color: transparent;">
       <img src="assets/logo.svg" alt="logo" />
     </header>
@@ -30,7 +36,8 @@
           <li><a href="#Destination">Destination</a></li>
           <li><a href="#package">Packages</a></li>
           <li><a href="About_Us.html">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+          <li><a href="signup.html">Sign In / Sign Up</a></li>
         </ul>
       </nav>
     </div>
@@ -175,135 +182,142 @@
       </div>
 
       <div class="package-cards">
-        <div class="package-card1">
-          <div class="package-image"></div>
-          <div class="package-contains">
-            <div class="package-paragraph">
-              <span class="package-title">
-                Experience The Great Holiday On Beach
-              </span>
-              Journey to explore, experience, and create lasting memories,
-              enriching life's tapestry with adventures
-              <i class="fas fa-location-dot"></i>
+        <a href="book.html">
+          <div class="package-card1">
+            <div class="package-image"></div>
+            <div class="package-contains">
+              <div class="package-paragraph">
+                <span class="package-title">
+                  Experience The Great Holiday On Beach
+                </span>
+                Journey to explore, experience, and create lasting memories,
+                enriching life's tapestry with adventures
+                <i class="fas fa-location-dot"></i>
+              </div>
+              <div class="meta">
+                <i class="bi bi-clock-fill" id="time"></i>
+                <p class="time">7D/6N</p>
+                <span class="line-vertical"> | </span>
+                <i class="bi bi-people-fill" id="people"></i>
+                <p class="people">pax:10</p>
+                <span class="line-vertical"> | </span>
+                <i class="bi bi-geo-alt-fill" id="map"></i>
+                <p class="map">Malaysia</p>
+              </div>
             </div>
-            <div class="meta">
-              <i class="bi bi-clock-fill" id="time"></i>
-              <p class="time">7D/6N</p>
-              <span class="line-vertical"> | </span>
-              <i class="bi bi-people-fill" id="people"></i>
-              <p class="people">pax:10</p>
-              <span class="line-vertical"> | </span>
-              <i class="bi bi-geo-alt-fill" id="map"></i>
-              <p class="map">Malaysia</p>
-            </div>
-          </div>
-          <div class="package-details">
-            <p class="rating">
-              <span class="reviews"> (20 reviews) </span>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill" id="closed-star"></i>
-            </p>
-            <p class="price">
-              <span class="dollar">$750 </span>
-              <br />
-              / per person
-            </p>
-            <button class="book-now">book now</button>
-          </div>
-        </div>
-        <div class="package-card2">
-          <div class="package-image"></div>
-          <div class="package-contains">
-            <div class="package-paragraph">
-              <span class="package-title">
-                summer holiday to the oxolotan river
-              </span>
-              Journey to explore, experience, and create lasting memories,
-              enriching life's tapestry with adventures
-              <i class="fas fa-location-dot"></i>
-            </div>
-            <div class="meta">
-              <i class="bi bi-clock-fill" id="time"></i>
-              <p class="time">7D/6N</p>
-              <span class="line-vertical"> | </span>
-              <i class="bi bi-people-fill" id="people"></i>
-              <p class="people">pax:10</p>
-              <span class="line-vertical"> | </span>
-              <i class="bi bi-geo-alt-fill" id="map"></i>
-              <p class="map">Malaysia</p>
-            </div>
-          </div>
-          <div class="package-details">
-            <p class="rating">
-              <span class="reviews"> (40 reviews) </span>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill" id="closed-star"></i>
-            </p>
-            <p class="price">
-              <span class="dollar">$520 </span>
-              <br />
-              / per person
-            </p>
-              <button class="book-now">book now</button>
-            </div>
-          </div>
-          <div class="package-card3">
-              <div class="package-image"></div>
-              <div class="package-contains">
-                  <div class="package-paragraph">
-                      <span class="package-title">
-                          Santorini Island's Weekend Vacation
-                        </span>
-                        Journey to explore, experience, and create lasting memories,
-                        enriching life's tapestry with adventures
-                        <i class="fas fa-location-dot"></i>
-                    </div>
-                    <ul class="meta">
-                        <li>
-                            <i class="bi bi-clock-fill" id="time"></i>
-                            <p class="time">7D/6N</p>
-                        </li>
-
-                        <li>
-                            <span class="line-vertical"> | </span>
-                            <i class="bi bi-people-fill" id="people"></i>
-                        </li>
-                        
-                        <li>
-                            <p class="people">pax:10</p>
-                            <span class="line-vertical"> | </span>
-                        </li>
-                        
-                        <li>
-                            <i class="bi bi-geo-alt-fill" id="map"></i>
-                            <p class="map">Malaysia</p>
-                        </li>
-                    
-                    </ul>
-        </div>
-        <div class="package-details">
+            <div class="package-details">
               <p class="rating">
-                  <span class="reviews"> (25 reviews) </span>
+                <span class="reviews"> (20 reviews) </span>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill" id="closed-star"></i>
-            </p>
-            <p class="price">
-              <span class="dollar">$660 </span>
-              <br />
-              / per person
-            </p>
-            <button class="book-now">book now</button>
+              </p>
+              <p class="price">
+                <span class="dollar">$750 </span>
+                <br />
+                / per person
+              </p>
+              <button class="book-now">book now</button>
+            </div>
           </div>
-        </div>
+        </a>
+
+        <a href="book.html">
+          <div class="package-card2">
+            <div class="package-image"></div>
+            <div class="package-contains">
+              <div class="package-paragraph">
+                <span class="package-title">
+                  summer holiday to the oxolotan river
+                </span>
+                Journey to explore, experience, and create lasting memories,
+                enriching life's tapestry with adventures
+                <i class="fas fa-location-dot"></i>
+              </div>
+              <div class="meta">
+                <i class="bi bi-clock-fill" id="time"></i>
+                <p class="time">7D/6N</p>
+                <span class="line-vertical"> | </span>
+                <i class="bi bi-people-fill" id="people"></i>
+                <p class="people">pax:10</p>
+                <span class="line-vertical"> | </span>
+                <i class="bi bi-geo-alt-fill" id="map"></i>
+                <p class="map">Malaysia</p>
+              </div>
+            </div>
+            <div class="package-details">
+              <p class="rating">
+                <span class="reviews"> (40 reviews) </span>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill" id="closed-star"></i>
+              </p>
+              <p class="price">
+                <span class="dollar">$520 </span>
+                <br />
+                / per person
+              </p>
+              <button class="book-now">book now</button>
+            </div>
+          </div>
+        </a>
+        <a href="book.html">
+          <div class="package-card3">
+            <div class="package-image"></div>
+            <div class="package-contains">
+              <div class="package-paragraph">
+                <span class="package-title">
+                  Santorini Island's Weekend Vacation
+                </span>
+                Journey to explore, experience, and create lasting memories,
+                enriching life's tapestry with adventures
+                <i class="fas fa-location-dot"></i>
+              </div>
+              <ul class="meta">
+                <li>
+                  <i class="bi bi-clock-fill" id="time"></i>
+                  <p class="time">7D/6N</p>
+                </li>
+
+                <li>
+                  <span class="line-vertical"> | </span>
+                  <i class="bi bi-people-fill" id="people"></i>
+                </li>
+
+                <li>
+                  <p class="people">pax:10</p>
+                  <span class="line-vertical"> | </span>
+                </li>
+
+                <li>
+                  <i class="bi bi-geo-alt-fill" id="map"></i>
+                  <p class="map">Malaysia</p>
+                </li>
+
+              </ul>
+            </div>
+            <div class="package-details">
+              <p class="rating">
+                <span class="reviews"> (25 reviews) </span>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill" id="closed-star"></i>
+              </p>
+              <p class="price">
+                <span class="dollar">$660 </span>
+                <br />
+                / per person
+              </p>
+              <button class="book-now">book now</button>
+            </div>
+          </div>
+        </a>
       </div>
       <div class="view-all-packages">view all packages</div>
   </section>
@@ -324,7 +338,7 @@
           </p>
         </div>
         <div class="contact-button">
-          <button>Contact Us!</button>
+          <a href="contact_us.html"><button >Contact Us!</button></a>
         </div>
       </div>
     </div>
@@ -374,7 +388,8 @@
       </ul>
     </div>
   </footer>
-  <script src="styles/navbar.js" ></script>
+  <script src="styles/back-to-top.js"></script>
+  <script src="styles/navbar.js"></script>
 </body>
 
 </html>

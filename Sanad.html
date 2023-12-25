@@ -4,28 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>About Us</title>
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="./files/logo.png" />
     <link rel="stylesheet" type="text/css" href="styles/About_Us.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
     />
-    <link rel="stylesheet" href="styles/scroll_bar.css">
-
+    <link rel="stylesheet" href="styles/scroll_bar.css" />
+    <link rel="stylesheet" href="styles/back-to-top.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
   </head>
+
   <body class="aboutbody">
+    <header>
+      <img src="assets/logo.svg" alt="logo" />
+    </header>
+    <a href="#" class="to-top">
+      <i class="bx bx-up-arrow-alt"></i>
+    </a>
     <div class="fixed">
       <nav class="navbar">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#Destination">Destination</a></li>
-          <li><a href="#package">Packages</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="About_Us.html">Contact Us</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="home.html#Destination">Destination</a></li>
+          <li><a href="home.html#package">Packages</a></li>
+          <li><a href="About_Us.html">About Us</a></li>
+          <li><a href="contact_us.html">Contact Us</a></li>
+          <li><a href="signup.html">Sign In / Sign Up</a></li>
         </ul>
       </nav>
     </div>
-  </div>
     <section class="about">
       <div class="main">
         <img src="photos/sanad.jpeg" alt="My Photo" />
@@ -45,44 +54,48 @@
                 target="_blank"
                 ><i class="bx bxl-facebook"></i
               ></a>
-              <a href="https://www.linkedin.com/in/omar-mohamed-sanad/" target="_blank"
+              <a
+                href="https://www.linkedin.com/in/omar-mohamed-sanad/"
+                target="_blank"
                 ><i class="bx bxl-linkedin"></i
               ></a>
               <a href="https://github.com/OmarSanad3" target="_blank"
                 ><i class="bx bxl-github"></i
               ></a>
+              <a href="mailto:omarmohamedsanad3@gmail.com" target="_blank"
+                ><i class="bx bxl-gmail"></i
             </div>
           </div>
         </div>
       </div>
-  </body>
-
-  <footer>
-    <div class="upper-footer">
-      <div class="container">
-        <div class="some-text">
-          <p>call to action</p>
-          <p>READY FOR UNFORGATABLE TRAVEL. REMEMBER US!</p>
-          <p>
-            Discover new horizons with us! Uncover hidden gems, embrace unique
-            cultures, and indulge in remarkable experiences. Our platform is
-            your key to extraordinary adventures, carefully tailored to ignite
-            your wanderlust.
-          </p>
-        </div>
-        <div class="contact-button">
-          <button>Contact Us!</button>
+    </section>
+    <footer>
+      <div class="upper-footer">
+        <div class="container">
+          <div class="some-text">
+            <p>call to action</p>
+            <p>READY FOR UNFORGATABLE TRAVEL. REMEMBER US!</p>
+            <p>
+              Discover new horizons with us! Uncover hidden gems, embrace unique
+              cultures, and indulge in remarkable experiences. Our platform is
+              your key to extraordinary adventures, carefully tailored to ignite
+              your wanderlust.
+            </p>
+          </div>
+          <div class="contact-button">
+            <a href="contact_us.html"><button>Contact Us!</button></a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="lower-footer">
-      <p>All rights reserved © 2024 <a href="About_Us.html">TeamGamed</a>.</p>
-      <ul>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Term & Conditions</a></li>
-        <li><a href="#">FAQ</a></li>
-      </ul>
-    </div>
-  </footer>
-
+      <div class="lower-footer">
+        <p>All rights reserved © 2024 <a href="About_Us.html">TeamGamed</a>.</p>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Term & Conditions</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="styles/back-to-top.js"></script>
+  </body>
 </html>
