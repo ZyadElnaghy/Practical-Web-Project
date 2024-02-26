@@ -27,4 +27,6 @@ html {
   bottom:32px;
   pointer-events: auto;
   opacity:1;
+  z-index: 1000;
 }
+  
