@@ -4,21 +4,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Contact Us</title>
+  <title>Sign In</title>
 
-  <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="../assets/favicon.svg" type="image/svg+xml">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="./files/logo.png" />
+  <link rel="stylesheet" href="../styles/About_Us_Home_.css" />
   <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="styles/scroll_bar.css">
-  <link rel="stylesheet" href="styles/footer-styles.css">
-  <link rel="stylesheet" href="styles/navbar.css">
-  <link rel="stylesheet" href="styles/contact_us.css">
-  <link rel="stylesheet" href="styles/home.css">
-  <link rel="stylesheet" href="styles/back-to-top.css">
+  <link rel="stylesheet" href="../styles/scroll_bar.css">
+  <link rel="stylesheet" href="../styles/footer-styles.css">
+  <link rel="stylesheet" href="../styles/navbar.css">
+  <link rel="stylesheet" href="../styles/signin.css" />
+  <link rel="stylesheet" href="../styles/back-to-top.css">
 </head>
 
 <body>
@@ -26,7 +26,7 @@
     <i class="bx bx-up-arrow-alt"></i>
   </a>
   <header>
-    <img src="assets/logo.svg" alt="logo" />
+    <img src="../assets/logo.svg" alt="logo" />
   </header>
   <div class="fixed">
     <nav id="navbar">
@@ -41,25 +41,25 @@
     </nav>
   </div>
 
-
-
-  <div class="contact-us">
-    <h1>Contact Us</h1>
-    <div class="form-contact-us">
-      <form>
-        <input type="text" placeholder="Your name" required />
-        <input type="email" placeholder="Your email" required />
-        <input type="text" placeholder="The subject" required />
-        <textarea placeholder="Your message" required></textarea>
-        <button type="submit">Send </button>
-      </form>
-    </div>
+  <div class="signin">
+    <h1>Sign In</h1>
+    <form method="post">
+      <div>
+        <label for="email"></label>
+        <input id="email" type="email" required placeholder="Email" name="mail">
+        <label for="password"></label>
+        <input id="password" type="password" required placeholder="Password" name="password" minlength="8"
+          maxlength="12">
+      </div>
+      <div>
+        <button type="submit">Sign In </button>
+      </div>
+      <div class="yes">
+        <div class="havenoaccount">Don't have an account?</div>
+        <a class="signuplink" href="signup.html"><div class="signup">Sign Up</div></a>
+      </div>
+    </form>
   </div>
-
-
-
-
-
   <footer>
     <div class="upper-footer">
       <div class="container">
@@ -73,6 +73,7 @@
         </div>
         <div class="contact-button">
           <a href="contact_us.html"><button >Contact Us!</button></a>
+
         </div>
       </div>
     </div>
@@ -122,8 +123,7 @@
     </div>
   </footer>
 
-  <script src="styles/back-to-top.js"></script>
-  <script src="styles/navbar.js"></script>
+  <script src="../styles/back-to-top.js"></script>
+  <script src="../styles/navbar.js"></script>
 </body>
-
 </html>
