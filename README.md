@@ -6,9 +6,7 @@ Welcome to Tourly, the go-to platform for all your travel needs! Whether you're 
 
 - **Destination Guides:** Explore detailed guides for various destinations, including popular attractions, local cuisine, and travel tips.
 
-- **Itinerary Planner:** Plan your trip with our user-friendly itinerary planner. Customize your schedule and make the most of your time.
-
-- **User Reviews:** Read and contribute reviews to help fellow travelers. Share your experiences and discover hidden gems recommended by others.
+- **Packages:** Discover customizable travel packages tailored to your preferences. Whether you're looking for a relaxing beach getaway or an adventurous mountain expedition, Tourly has the perfect package for you.
 
 - **Travel Blog:** Stay updated with our travel blog, featuring inspiring stories, travel hacks, and expert advice.
 
